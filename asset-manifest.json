@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/The-Museum/static/js/main.033f5338.chunk.js",
+    "main.js.map": "/The-Museum/static/js/main.033f5338.chunk.js.map",
+    "runtime-main.js": "/The-Museum/static/js/runtime-main.9a54f36d.js",
+    "runtime-main.js.map": "/The-Museum/static/js/runtime-main.9a54f36d.js.map",
+    "static/js/2.846fad51.chunk.js": "/The-Museum/static/js/2.846fad51.chunk.js",
+    "static/js/2.846fad51.chunk.js.map": "/The-Museum/static/js/2.846fad51.chunk.js.map",
+    "index.html": "/The-Museum/index.html",
+    "precache-manifest.c35d319b769a147881e486730a126612.js": "/The-Museum/precache-manifest.c35d319b769a147881e486730a126612.js",
+    "service-worker.js": "/The-Museum/service-worker.js",
+    "static/js/2.846fad51.chunk.js.LICENSE.txt": "/The-Museum/static/js/2.846fad51.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a54f36d.js",
+    "static/js/2.846fad51.chunk.js",
+    "static/js/main.033f5338.chunk.js"
+  ]
+}
