@@ -8,6 +8,7 @@
 
 @import './mixins/text-emphasis';
 @import './mixins/line';
+@import './mixins/circle';
 
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
@@ -18,15 +19,40 @@
 @import "~bootstrap/scss/images";
 @import "~bootstrap/scss/code";
 @import "~bootstrap/scss/grid";
+// @import "tables";
+@import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/buttons";
 // @import "~bootstrap/scss/transitions";
+// @import "dropdown";
+// @import "button-group";
+@import "~bootstrap/scss/input-group";
+// @import "custom-forms";
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
+// @import "card";
+// @import "breadcrumb";
+// @import "pagination";
+// @import "badge";
+// @import "jumbotron";
+// @import "alert";
+// @import "progress";
+// @import "media";
+// @import "list-group";
+// @import "close";
+// @import "toasts";
+// @import "modal";
+// @import "tooltip";
+// @import "popover";
+// @import "carousel";
+// @import "spinners";
 @import "~bootstrap/scss/utilities";
+// @import "print";
 
 // custom
 @import './utils/font-size';
 @import './utils/transition';
-@import './components/menu-link';
-@import './layout/l-header';
 @import './state/is-hover';
+@import './components/menu-link';
+@import './components/circle-btn';
+@import './components/link';
+@import './layout/l-header';

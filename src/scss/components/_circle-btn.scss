@@ -1,0 +1,28 @@
+.circle-btn {
+  @include circle;
+
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $body-bg;
+  background-color: map-get($theme-colors, primary);
+
+  &:hover,
+  &--active {
+    background-color: rgba(map-get($theme-colors, primary), 0.65);
+  }
+
+  &--dark {
+    color: $white;
+    background-color: $dark;
+
+    &.circle-btn:hover,
+    &.circle-btn--active {
+      color: darken($white, 25%);
+      background-color: lighten($dark, 25%);
+    }
+  }
+}

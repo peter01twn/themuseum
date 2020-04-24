@@ -1,0 +1,34 @@
+@mixin circle() {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@mixin semi-circle($direction) {
+  width: 50%;
+  height: 100%;
+  @if $direction == right {
+    border-top-right-radius: 100% 50%;
+    border-bottom-right-radius: 100% 50%;
+  } @else if $direction == left{
+    border-top-left-radius: 100% 50%;
+    border-bottom-left-radius: 100% 50%;
+  }
+}
+
+@mixin semi-circle-border($direction: false, $border-width: 7px, $color: gray) {
+  border-color: $color;
+  border-style: solid;
+  border-top-width: $border-width;
+  border-bottom-width: $border-width;
+  @if $direction == left {
+    border-left-width: $border-width;
+    border-right-width: 0;
+  } @else if $direction == right {
+    border-right-width: $border-width;
+    border-left-width: 0;
+  } @else {
+    border-left-width: $border-width;
+    border-right-width: $border-width;
+  }
+}

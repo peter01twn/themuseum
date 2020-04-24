@@ -2,16 +2,15 @@
   position: relative;
 
   &__toggle {
-    // color: $link-color;
-    // background-color: transparent;
-    // border: none;
     cursor: pointer;
     @include media-breakpoint-up(lg) {
       display: none;
     }
   }
+
   &__navbar-collapse {
     position: relative;
+    z-index: $zindex-sticky;
 
     @include media-breakpoint-down(md) {
       position: absolute;
@@ -32,6 +31,7 @@
     top: 100%;
     left: 0;
     width: 100%;
+    z-index: $zindex-sticky;
 
     &:hover, &--show {
       display: block;
