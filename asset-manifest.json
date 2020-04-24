@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/The-Museum/static/css/main.36f99c32.chunk.css",
-    "main.js": "/The-Museum/static/js/main.9d7652ec.chunk.js",
-    "main.js.map": "/The-Museum/static/js/main.9d7652ec.chunk.js.map",
+    "main.js": "/The-Museum/static/js/main.87cd7469.chunk.js",
+    "main.js.map": "/The-Museum/static/js/main.87cd7469.chunk.js.map",
     "runtime-main.js": "/The-Museum/static/js/runtime-main.9a54f36d.js",
     "runtime-main.js.map": "/The-Museum/static/js/runtime-main.9a54f36d.js.map",
     "static/js/2.f0f25184.chunk.js": "/The-Museum/static/js/2.f0f25184.chunk.js",
     "static/js/2.f0f25184.chunk.js.map": "/The-Museum/static/js/2.f0f25184.chunk.js.map",
     "index.html": "/The-Museum/index.html",
-    "precache-manifest.71e27df0de06176482599666615f320b.js": "/The-Museum/precache-manifest.71e27df0de06176482599666615f320b.js",
+    "precache-manifest.89816cc737b302d798f13f275cd8a0ee.js": "/The-Museum/precache-manifest.89816cc737b302d798f13f275cd8a0ee.js",
     "service-worker.js": "/The-Museum/service-worker.js",
     "static/css/main.36f99c32.chunk.css.map": "/The-Museum/static/css/main.36f99c32.chunk.css.map",
     "static/js/2.f0f25184.chunk.js.LICENSE.txt": "/The-Museum/static/js/2.f0f25184.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9a54f36d.js",
     "static/js/2.f0f25184.chunk.js",
     "static/css/main.36f99c32.chunk.css",
-    "static/js/main.9d7652ec.chunk.js"
+    "static/js/main.87cd7469.chunk.js"
   ]
 }
