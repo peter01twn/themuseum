@@ -1,0 +1,98 @@
+// colors
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$dark: $black;
+$primary: $white;
+$secondary: $gray-500;
+$light: $gray-700;
+
+$colors: (
+  'black': $black,
+);
+
+$theme-colors: (
+  'shadow': #1d1d1d,
+);
+
+// font size
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * 0.875;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$font-sizes: (
+  'sm': $font-size-sm,
+  'md': $h6-font-size,
+  'lg': $h5-font-size,
+  'xl': $h4-font-size,
+  'xxl': $h3-font-size,
+);
+
+// spacer
+$spacer: 1rem;
+$spacers: (
+  // 0: 0,
+    // 1: (
+    //   $spacer * 0.25,
+    // ),
+    // 2: (
+    //   $spacer * 0.5,
+    // ),
+    // 3: $spacer,
+    // 4: (
+    //   $spacer * 1.5,
+    // ),
+    5: ($spacer * 2.25),
+  6: ($spacer * 3)
+);
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg: $dark;
+$body-color: $white;
+
+$component-active-bg: $primary;
+
+$link-color: $primary;
+$link-hover-color: currentColor;
+
+// Grid
+$grid-breakpoints: (
+  min: 0,
+  xxs: 375px,
+  xs: 414px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+);
+
+$container-max-widths: (
+  sm: 570px,
+  md: 752px,
+  lg: 966px,
+  xl: 1174px,
+  xxl: 1414px,
+);
+
+$grid-gutter-width: $spacer * 3;
+
+$navbar-padding-x: $spacer * 3 / 2;

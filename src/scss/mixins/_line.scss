@@ -1,0 +1,5 @@
+@mixin horizontal-bg-line($width: 1px, $length: 100%, $color: currentColor) {
+  background-repeat: no-repeat;
+  background-image: linear-gradient($color, $color);
+  background-size: $length $width;
+}

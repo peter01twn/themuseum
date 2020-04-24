@@ -1,0 +1,31 @@
+.menu-link {
+  display: inline-block;
+  color: $link-color;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  border-bottom: 1.5px solid;
+  border-color: transparent;
+
+  &:hover,
+  &--active {
+    border-color: currentColor;
+    text-decoration: none;
+  }
+
+  @each $color-name, $color in $theme-colors {
+    &--#{$color-name} {
+      color: $white;
+      border-color: $color;
+      &:hover, &.menu-link--active {
+        color: darken($white, 25%);
+        border-color: lighten($color, 25%);
+      }
+    }
+  }
+}
+
+button.menu-link {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}

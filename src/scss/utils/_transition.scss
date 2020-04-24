@@ -1,0 +1,14 @@
+.collapse {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+@each $breakpoint, $val in $grid-breakpoints {
+  .collapse-#{$breakpoint} {
+    @include media-breakpoint-up($breakpoint) {
+      height: auto;
+      overflow: initial;
+    }
+  }
+}

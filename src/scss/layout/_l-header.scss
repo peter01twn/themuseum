@@ -1,0 +1,50 @@
+.l-header {
+  position: relative;
+
+  &__toggle {
+    // color: $link-color;
+    // background-color: transparent;
+    // border: none;
+    cursor: pointer;
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+  &__navbar-collapse {
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+
+      .menu-link {
+        display: block;
+        border-bottom: 1px solid $light;
+      }
+    }
+  }
+
+  &__sub-collapse {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    &:hover, &--show {
+      display: block;
+    }
+
+    @include media-breakpoint-down(md) {
+      display: block;
+      transform: translateX(100%);
+      transition: transform .5s;
+
+      &:hover, &--show {
+        transform: translateX(0);
+      }
+    }
+  }
+}
