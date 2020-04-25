@@ -9,6 +9,8 @@
 @import './mixins/text-emphasis';
 @import './mixins/line';
 @import './mixins/circle';
+@import './mixins/teaser';
+@import './mixins/object-cover';
 
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
@@ -29,7 +31,7 @@
 // @import "custom-forms";
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
-// @import "card";
+@import "~bootstrap/scss/card";
 // @import "breadcrumb";
 // @import "pagination";
 // @import "badge";
@@ -43,7 +45,7 @@
 // @import "modal";
 // @import "tooltip";
 // @import "popover";
-// @import "carousel";
+@import "~bootstrap/scss/carousel";
 // @import "spinners";
 @import "~bootstrap/scss/utilities";
 // @import "print";
@@ -52,7 +54,14 @@
 @import './utils/font-size';
 @import './utils/transition';
 @import './state/is-hover';
+@import './state/teaser';
+@import './components/card';
 @import './components/menu-link';
 @import './components/circle-btn';
 @import './components/link';
+@import './components/swiper';
+@import './layout/grid';
 @import './layout/l-header';
+@import './layout/l-section';
+// @import './layout/l-banner';
+@import './pages/index';

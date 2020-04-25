@@ -15,13 +15,14 @@ $dark: $black;
 $primary: $white;
 $secondary: $gray-500;
 $light: $gray-700;
+$shadow: #1d1d1d;
 
 $colors: (
   'black': $black,
 );
 
 $theme-colors: (
-  'shadow': #1d1d1d,
+  'shadow': $shadow
 );
 
 // font size
@@ -101,3 +102,10 @@ $input-placeholder-color: $primary;
 $btn-border-radius: 0;
 $btn-border-radius-lg: 0;
 $btn-border-radius-sm: 0;
+
+$card-spacer-y: $spacer * 1.5;
+$card-spacer-x: $spacer * 1.5;
+$card-border-radius: 0;
+$card-bg: $shadow;
+
+$circle-btn-size: 50px;

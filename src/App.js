@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Index from './pages/Index.jsx'
+import Index from './pages/index/Index.jsx'
 
 function App() {
   return (

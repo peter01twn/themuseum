@@ -1,0 +1,9 @@
+.l-section {
+  $padding-y: map-get($spacers, 4);
+  padding-top: $padding-y;
+  padding-bottom: $padding-y;
+
+  &__title {
+    font-size: $h2-font-size;
+  }
+}

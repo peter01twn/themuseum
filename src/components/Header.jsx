@@ -1,7 +1,7 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar, Container, Row, Col, Button } from 'react-bootstrap'
-import Collapse from 'components/Collapse'
+import Collapse from 'utils/Collapse'
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false)
@@ -16,8 +16,8 @@ export default function Header() {
   }
 
   return (
-    <header className="l-header h5">
-      <Navbar className="py-5 border-bottom border-light">
+    <header className="l-header mb-0">
+      <Navbar className={`py-5 ${isMenuOpen || isSubMenuOpen ? 'border-bottom border-light' : ''}`}>
         <Container fluid="lg">
           <Link to="/" className="text-decoration-none">
             <p className="h1">The Museum</p>
@@ -34,7 +34,7 @@ export default function Header() {
             )}
             <span className="pl-3">Menu</span>
           </Button>
-          <nav className={`l-header__navbar-collapse`}>
+          <nav className={`l-header__navbar-collapse bg-dark`}>
             <Collapse expand="lg" isShow={isMenuOpen} className="mb-0">
               <Container fluid="lg" className="d-block px-lg-0">
                 <ul className="d-none d-lg-flex justify-content-lg-end">

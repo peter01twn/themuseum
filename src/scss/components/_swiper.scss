@@ -1,0 +1,59 @@
+.swiper {
+  // nav-el vars
+  $nav-el-top: calc(50% - #{$circle-btn-size} / 2);
+  $nav-el-x: 1%;
+  $nav-bg: $white;
+  $nav-img-color: $dark;
+  $nav-hover-bg: darken($nav-bg, 35%);
+
+  &__pagination {
+    &-item {
+    }
+  }
+
+  // nav-el
+  &__pre-el {
+    @include circle;
+    width: $circle-btn-size;
+    height: $circle-btn-size;
+    position: absolute;
+    z-index: 10;
+    top: $nav-el-top;
+    left: $nav-el-x;
+    overflow: hidden;
+    background-color: $nav-bg;
+    cursor: pointer;
+    transition: background-color .1s;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: $nav-img-color;
+      clip-path: polygon(55% 30%, 60% 30%, 40% 50%, 60% 70%, 55% 70%, 35% 50%);
+    }
+
+    &:hover {
+      background-color: $nav-hover-bg;
+    }
+
+    &:active,
+    &.active {
+      background-color: $nav-img-color;
+
+      &::before {
+        background-color: $nav-bg;
+      }
+    }
+  }
+  &__next-el {
+    @extend .swiper__pre-el;
+    left: auto;
+    right: $nav-el-x;
+
+    &::before {
+      clip-path: polygon(45% 30%, 40% 30%, 60% 50%, 40% 70%, 45% 70%, 65% 50%);
+    }
+  }
+}
