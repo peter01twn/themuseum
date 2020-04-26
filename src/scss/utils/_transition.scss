@@ -1,14 +1,75 @@
 .collapse {
-  height: 0;
-  overflow: hidden;
-  transition: height 0.5s;
+  &:not(.collapse--show) {
+    display: none;
+  }
+
+  &--collapsing {
+    position: relative;
+    display: block;
+    height: 0;
+    transition: height 0.5s;
+    overflow: hidden;
+  }
 }
 
 @each $breakpoint, $val in $grid-breakpoints {
   .collapse-#{$breakpoint} {
+    @include media-breakpoint-down($breakpoint) {
+      &:not(.collapse--show) {
+        display: block;
+      }
+      &.collapse--collapsing {
+        height: auto;
+      }
+    }
+  }
+  .collapse-expand-#{$breakpoint} {
     @include media-breakpoint-up($breakpoint) {
-      height: auto;
-      overflow: initial;
+      &:not(.collapse--show) {
+        display: block;
+      }
+      &.collapse--collapsing {
+        height: auto;
+      }
+    }
+  }
+}
+
+.slide {
+  &:not(.slide--show) {
+    display: none;
+  }
+  
+  &--sliding {
+    display: block;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+  }
+
+
+}
+
+@each $breakpoint, $val in $grid-breakpoints {
+  .slide-#{$breakpoint} {
+    @include media-breakpoint-down($breakpoint) {
+      &:not(.slide--show) {
+        display: block;
+      }
+      &.slide--sliding {
+        transform: translateX(0);
+        transition: none;
+      }
+    }
+  }
+  .slide-expand-#{$breakpoint} {
+    @include media-breakpoint-up($breakpoint) {
+      &:not(.slide--show) {
+        display: block;
+      }
+      &.slide--sliding {
+        transform: translateX(0);
+        transition: none;
+      }
     }
   }
 }

@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar, Container, Row, Col, Button } from 'react-bootstrap'
 import Collapse from 'utils/Collapse'
+import Slide from 'utils/Slide'
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false)
   const [isSubMenuOpen, setSubMenuOpen] = useState(false)
   const toggleMenu = () => setMenuOpen(!isMenuOpen)
   const toggleSubMenu = () => setSubMenuOpen(!isSubMenuOpen)
+  const closeSubMenu = () => setSubMenuOpen(false)
   const handleNavbarToggle = () => {
     if (isSubMenuOpen) {
       toggleSubMenu()
@@ -17,14 +19,18 @@ export default function Header() {
 
   return (
     <header className="l-header mb-0">
-      <Navbar className={`py-5 ${isMenuOpen || isSubMenuOpen ? 'border-bottom border-light' : ''}`}>
+      <Navbar
+        className={`pt-5 pb-0 border-bottom ${
+          isMenuOpen || isSubMenuOpen ? 'border-light' : 'border-dark'
+        }`}
+      >
         <Container fluid="lg">
           <Link to="/" className="text-decoration-none">
-            <p className="h1">The Museum</p>
+            <p className="h3">The Museum</p>
           </Link>
           <Button
             variant="link"
-            className="l-header__toggle fs-lg"
+            className="l-header__toggle"
             onClick={handleNavbarToggle}
           >
             {!isMenuOpen ? (
@@ -51,13 +57,11 @@ export default function Header() {
                     </a>
                   </li>
                 </ul>
-                <Row as="ul" className="flex-lg-nowrap mt-lg-3 mb-lg-n5">
+                <Row as="ul" className="flex-lg-nowrap mt-lg-3 mb-0">
                   <Col as="li" sm="6" lg="auto">
                     <Link
                       to="/"
                       onClick={toggleSubMenu}
-                      onMouseEnter={() => setSubMenuOpen(true)}
-                      onMouseLeave={() => setSubMenuOpen(false)}
                       className="menu-link py-3 pt-lg-0 pb-lg-5"
                     >
                       Visit
@@ -133,51 +137,55 @@ export default function Header() {
         </Container>
       </Navbar>
       <div
-        className={`l-header__sub-collapse bg-dark ${
-          isSubMenuOpen ? 'l-header__sub-collapse--show' : ''
-        }`}
+        className={`l-header__sub-collapse bg-dark`}
+        onMouseEnter={() => setSubMenuOpen(true)}
+        onMouseLeave={() => setSubMenuOpen(false)}
       >
-        <Container as="nav" fluid="lg" className="px-lg-0">
-          <Row as="ul">
-            <Col as="li" lg="4" className="l-header__toggle">
-              <Button
-                variant="link"
-                onClick={toggleSubMenu}
-                className="menu-link menu-link--light w-100 d-flex align-items-center px-0 py-3 py-lg-4 fs-lg rounded-0"
-              >
-                <i className="mr-3 fas fa-arrow-alt-circle-left" />
-                <span>back</span>
-              </Button>
-            </Col>
-            <Col as="li" lg="4">
-              <a
-                href="#"
-                className="menu-link menu-link--light d-flex justify-content-between align-items-center py-3 py-lg-4"
-              >
-                <span>assadsa</span>
-                <i className="fas fa-arrow-alt-circle-right" />
-              </a>
-            </Col>
-            <Col as="li" lg="4" className="menu__item">
-              <a
-                href="#"
-                className="menu-link menu-link--light d-flex justify-content-between align-items-center py-3 py-lg-4"
-              >
-                <span>assadsa</span>
-                <i className="fas fa-arrow-alt-circle-right" />
-              </a>
-            </Col>
-            <Col as="li" lg="4" className="menu__item">
-              <a
-                href="#"
-                className="menu-link menu-link--light d-flex justify-content-between align-items-center py-3 py-lg-4"
-              >
-                <span>assadsa</span>
-                <i className="fas fa-arrow-alt-circle-right" />
-              </a>
-            </Col>
-          </Row>
-        </Container>
+        <Collapse isShow={isSubMenuOpen} response="md">
+          <Slide isShow={isSubMenuOpen} expand="lg">
+            <Container as="nav" fluid="lg" className="px-lg-0">
+              <Row as="ul">
+                <Col as="li" lg="4" className="l-header__toggle">
+                  <Button
+                    variant="link"
+                    onClick={closeSubMenu}
+                    className="menu-link menu-link--light w-100 d-flex align-items-center px-0 py-3 py-lg-4 fs-lg rounded-0"
+                  >
+                    <i className="mr-3 fas fa-arrow-alt-circle-left" />
+                    <span>back</span>
+                  </Button>
+                </Col>
+                <Col as="li" lg="4">
+                  <a
+                    href="#"
+                    className="menu-link menu-link--light d-flex justify-content-between align-items-center py-3 py-lg-4"
+                  >
+                    <span>assadsa</span>
+                    <i className="fas fa-arrow-alt-circle-right" />
+                  </a>
+                </Col>
+                <Col as="li" lg="4" className="menu__item">
+                  <a
+                    href="#"
+                    className="menu-link menu-link--light d-flex justify-content-between align-items-center py-3 py-lg-4"
+                  >
+                    <span>assadsa</span>
+                    <i className="fas fa-arrow-alt-circle-right" />
+                  </a>
+                </Col>
+                <Col as="li" lg="4" className="menu__item">
+                  <a
+                    href="#"
+                    className="menu-link menu-link--light d-flex justify-content-between align-items-center py-3 py-lg-4"
+                  >
+                    <span>assadsa</span>
+                    <i className="fas fa-arrow-alt-circle-right" />
+                  </a>
+                </Col>
+              </Row>
+            </Container>
+          </Slide>
+        </Collapse>
       </div>
     </header>
   )

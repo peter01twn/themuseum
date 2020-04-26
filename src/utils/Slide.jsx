@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { addClass, removeClass } from 'utils/toggleClass'
 
-const Collapse = ({
+const Slide = ({
   children,
   isShow = false,
   response = '',
@@ -18,11 +18,9 @@ const Collapse = ({
     if (e.target !== e.currentTarget) return
 
     if (isShow) {
-      newClass = removeClass('collapse--collapsing')(className)
+      newClass = removeClass('slide--sliding')(className)
     } else {
-      newClass = removeClass(['collapse--show', 'collapse--collapsing'])(
-        className
-      )
+      newClass = removeClass(['slide--show', 'slide--sliding'])(className)
     }
     container.className = newClass
   }
@@ -31,15 +29,21 @@ const Collapse = ({
     const container = el.current
     const className = container.className
     if (isShow) {
-      const newClass = addClass(['collapse--collapsing', 'collapse--show'])(
-        className
-      )
+      const newClass = addClass(['slide--sliding', 'slide--show'])(className)
       container.className = newClass
-      container.style.height = container.scrollHeight + 'px'
+
+      // force Reflow
+      let forceReflow = container.scrollWidth
+
+      container.style.transform = 'translateX(0)'
     } else {
-      const newClass = addClass(['collapse--collapsing'])(className)
+      const newClass = addClass(['slide--sliding'])(className)
       container.className = newClass
-      container.style.height = ''
+
+      // force Reflow
+      let forceReflow = container.scrollWidth
+
+      container.style.transform = ''
     }
   }, [isShow])
 
@@ -47,7 +51,7 @@ const Collapse = ({
     <div
       ref={el}
       onTransitionEnd={handleTransitionEnd}
-      className={`collapse collapse-${response} collapse-expand-${expand} ${className}`}
+      className={`slide slide-${response} slide-expand-${expand} ${className}`}
       {...attrs}
     >
       {children}
@@ -55,4 +59,4 @@ const Collapse = ({
   )
 }
 
-export default Collapse
+export default Slide
