@@ -1,5 +1,4 @@
-@mixin teaser {
-  $hover-size: -4%;
+@mixin teaser($bg-color: $shadow, $active-size: 1.2) {
   position: relative;
 
   &::before {
@@ -11,14 +10,13 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-color: $shadow;
-    transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53),
+    background-color: $bg-color;
+    transition: transform 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53),
       background-color 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   }
-  &:hover::before, &.active::before {
-    top: $hover-size;
-    left: $hover-size;
-    right: $hover-size;
-    bottom: $hover-size;
+
+  &:hover::before,
+  &--active::before {
+    transform: scale($active-size);
   }
 }

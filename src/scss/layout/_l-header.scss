@@ -1,7 +1,7 @@
 .l-header {
   position: relative;
-  overflow-x: visible;
-  overflow-y: visible;
+  z-index: $zindex-dropdown;
+  background-color: $body-bg;
 
   &__toggle {
     cursor: pointer;
@@ -19,7 +19,7 @@
       top: 100%;
       right: 0;
       width: 100%;
-      
+
       .menu-link {
         display: block;
         border-bottom: 1px solid $light;

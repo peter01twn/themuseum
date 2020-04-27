@@ -1,0 +1,58 @@
+.parallax {
+  $hover-block-height: 670px;
+  position: relative;
+
+  &__fixed-block {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__hover-block {
+    display: block;
+    position: relative;
+    z-index: 100;
+    height: $hover-block-height;
+    background-color: transparent;
+  }
+
+  &__scroll-block {
+    position: relative;
+    z-index: 100;
+    background-color: $body-bg;
+    // background-image: linear-gradient(
+    //   to bottom,
+    //   transparent 0,
+    //   transparent $hover-block-height,
+    //   $body-bg $hover-block-height
+    // );
+  }
+
+  @include media-breakpoint-down(lg) {
+    &__hover-block {
+      height: $hover-block-height * 0.8;
+    }
+    // &__scroll-block {
+    //   background-image: linear-gradient(
+    //     to bottom,
+    //     transparent 0,
+    //     transparent 540px,
+    //     $body-bg 540px
+    //   );
+    // }
+  }
+  @include media-breakpoint-down(md) {
+    &__hover-block {
+      height: $hover-block-height * 0.6;
+    }
+    // &__scroll-block {
+    //   background-image: linear-gradient(
+    //     to bottom,
+    //     transparent 0,
+    //     transparent 400px,
+    //     $body-bg 400px
+    //   );
+    // }
+  }
+}

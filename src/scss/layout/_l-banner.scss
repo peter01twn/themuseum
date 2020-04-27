@@ -1,35 +1,31 @@
 .l-banner {
-  &__carousel-img {
-    width: 100%;
-    height: 640px;
+  background-position: center center;
+  background-size: cover;
+  background-color: $shadow;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+  &__outer {
+    $padding-y: map-get($spacers, 5);
+    
+    @include make-container();
+    @include make-container-max-widths();
+
+    padding-top: $padding-y;
+    padding-bottom: $padding-y;
+    padding-left: $padding-y * 2;
+    padding-right: $padding-y * 2;
+    
+    @include media-breakpoint-down(lg) {
+      min-width: 100%;
     }
   }
-  .carousel-caption {
-    $padding-x: $spacer * 1.5;
-    padding-left: $padding-x;
-    padding-right: $padding-x;
-    width: 320px;
-    left: 6%;
-    right: auto;
-    bottom: 8%;
-    text-align: left;
-    background-color: $body-bg;
-  }
+  
+  &__inner {
+    padding: map-get($spacers, 5);
+    background-color: $white;
+    color: #000;
 
-  @include media-breakpoint-down(md) {
-    &__carousel-img {
-      height: 440px;
-    }
-    .carousel-caption {
-      position: static;
-      width: 100%;
-      color: $body-bg;
-      background-color: $white;
+    @include media-breakpoint-down(lg) {
+      padding: map-get($spacers, 5) / 2;
     }
   }
 }

@@ -9,7 +9,7 @@ import Index from './pages/index/Index.jsx'
 function App() {
   return (
     <Router>
-      <div className="App overflow-hidden">
+      <div className="App">
         <Switch>
           <Route path="/">
             <Index />

@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'scss/index.scss'
 import 'swiper/css/swiper.min.css'
+import 'scss/index.scss'
 
 const render = () => {
   ReactDOM.render(

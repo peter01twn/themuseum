@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  Container,
   Row,
   Col,
   Form,
@@ -13,10 +12,10 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-shadow">
-      <Container fluid="lg">
-        <Row as="section" className="py-5 border-bottom border-light">
+      <div className="l-section">
+        <Row as="section" className="pb-4 border-bottom border-light">
           <Col md="6">
-            <h3 className="mb-3">Connect with us</h3>
+            <h3 className="l-section__title mb-3">Connect with us</h3>
             <ul className="d-flex">
               <li>
                 <div className="circle-btn circle-btn--dark">
@@ -367,11 +366,9 @@ export default function Footer() {
             </Row>
           </Col>
         </Row>
-      </Container>
-      <div className="py-2 bg-dark text-center fs-sm">
-        <Container fluid="lg">
-          © 2020 The Trustees of the peter
-        </Container>
+      </div>
+      <div className="bg-dark py-2 text-center fs-sm">
+        © 2020 The Trustees of the peter
       </div>
     </footer>
   )

@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header className="l-header mb-0">
       <Navbar
-        className={`pt-5 pb-0 border-bottom ${
+        className={`pt-5 pb-4 pb-lg-0 border-bottom ${
           isMenuOpen || isSubMenuOpen ? 'border-light' : 'border-dark'
         }`}
       >

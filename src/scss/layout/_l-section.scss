@@ -1,7 +1,14 @@
 .l-section {
-  $padding-y: map-get($spacers, 4);
+  $padding-y: map-get($spacers, 5);
   padding-top: $padding-y;
   padding-bottom: $padding-y;
+
+  @include make-container();
+  @include make-container-max-widths();
+
+  @include media-breakpoint-down(lg) {
+    min-width: 100%;
+  }
 
   &__title {
     font-size: $h2-font-size;

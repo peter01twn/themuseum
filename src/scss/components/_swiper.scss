@@ -1,14 +1,49 @@
 .swiper {
   // nav-el vars
   $nav-el-top: calc(50% - #{$circle-btn-size} / 2);
-  $nav-el-x: 1%;
+  $nav-el-x: 10px;
   $nav-bg: $white;
   $nav-img-color: $dark;
   $nav-hover-bg: darken($nav-bg, 35%);
 
+  &-container {
+    padding: 0 map-get($spacers, 5);
+  }
+
+  &-slide {
+    width: auto;
+  }
+
   &__pagination {
-    &-item {
+    &-bullets {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      padding: 10px 0;
     }
+
+    &-item {
+      $size: 10px;
+      @include circle($size);
+      @include teaser($shadow, 1.3);
+      margin: 0 $size / 2;
+      display: inline-block;
+      cursor: pointer;
+
+      &::before {
+        @include circle($size);
+      }
+      &--active {
+        background-color: $white;
+        
+        &:hover {
+          background-color: $white;
+        }
+      }
+    }
+
   }
 
   // nav-el
