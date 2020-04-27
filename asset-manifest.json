@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/themuseum/static/css/main.1ad62c21.chunk.css",
-    "main.js": "/themuseum/static/js/main.b517b1a6.chunk.js",
-    "main.js.map": "/themuseum/static/js/main.b517b1a6.chunk.js.map",
+    "main.css": "/themuseum/static/css/main.6042eca9.chunk.css",
+    "main.js": "/themuseum/static/js/main.f8906be4.chunk.js",
+    "main.js.map": "/themuseum/static/js/main.f8906be4.chunk.js.map",
     "runtime-main.js": "/themuseum/static/js/runtime-main.de5bb5c6.js",
     "runtime-main.js.map": "/themuseum/static/js/runtime-main.de5bb5c6.js.map",
     "static/css/2.3d637859.chunk.css": "/themuseum/static/css/2.3d637859.chunk.css",
-    "static/js/2.b3209f7c.chunk.js": "/themuseum/static/js/2.b3209f7c.chunk.js",
-    "static/js/2.b3209f7c.chunk.js.map": "/themuseum/static/js/2.b3209f7c.chunk.js.map",
+    "static/js/2.ee6b80df.chunk.js": "/themuseum/static/js/2.ee6b80df.chunk.js",
+    "static/js/2.ee6b80df.chunk.js.map": "/themuseum/static/js/2.ee6b80df.chunk.js.map",
     "index.html": "/themuseum/index.html",
-    "precache-manifest.c262ff48ddb230b35c428fc71be0dbb6.js": "/themuseum/precache-manifest.c262ff48ddb230b35c428fc71be0dbb6.js",
+    "precache-manifest.98e53399add5f9a7250732539fc21f9f.js": "/themuseum/precache-manifest.98e53399add5f9a7250732539fc21f9f.js",
     "service-worker.js": "/themuseum/service-worker.js",
     "static/css/2.3d637859.chunk.css.map": "/themuseum/static/css/2.3d637859.chunk.css.map",
-    "static/css/main.1ad62c21.chunk.css.map": "/themuseum/static/css/main.1ad62c21.chunk.css.map",
-    "static/js/2.b3209f7c.chunk.js.LICENSE.txt": "/themuseum/static/js/2.b3209f7c.chunk.js.LICENSE.txt"
+    "static/css/main.6042eca9.chunk.css.map": "/themuseum/static/css/main.6042eca9.chunk.css.map",
+    "static/js/2.ee6b80df.chunk.js.LICENSE.txt": "/themuseum/static/js/2.ee6b80df.chunk.js.LICENSE.txt",
+    "static/media/hero-bg2.jpg": "/themuseum/static/media/hero-bg2.5d1377fa.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.de5bb5c6.js",
     "static/css/2.3d637859.chunk.css",
-    "static/js/2.b3209f7c.chunk.js",
-    "static/css/main.1ad62c21.chunk.css",
-    "static/js/main.b517b1a6.chunk.js"
+    "static/js/2.ee6b80df.chunk.js",
+    "static/css/main.6042eca9.chunk.css",
+    "static/js/main.f8906be4.chunk.js"
   ]
 }
