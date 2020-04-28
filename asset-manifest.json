@@ -1,26 +1,39 @@
 {
   "files": {
-    "main.css": "/themuseum/static/css/main.6042eca9.chunk.css",
-    "main.js": "/themuseum/static/js/main.f8906be4.chunk.js",
-    "main.js.map": "/themuseum/static/js/main.f8906be4.chunk.js.map",
+    "main.css": "/themuseum/static/css/main.3997efd2.chunk.css",
+    "main.js": "/themuseum/static/js/main.116a8951.chunk.js",
+    "main.js.map": "/themuseum/static/js/main.116a8951.chunk.js.map",
     "runtime-main.js": "/themuseum/static/js/runtime-main.de5bb5c6.js",
     "runtime-main.js.map": "/themuseum/static/js/runtime-main.de5bb5c6.js.map",
     "static/css/2.3d637859.chunk.css": "/themuseum/static/css/2.3d637859.chunk.css",
-    "static/js/2.ee6b80df.chunk.js": "/themuseum/static/js/2.ee6b80df.chunk.js",
-    "static/js/2.ee6b80df.chunk.js.map": "/themuseum/static/js/2.ee6b80df.chunk.js.map",
+    "static/js/2.57111e38.chunk.js": "/themuseum/static/js/2.57111e38.chunk.js",
+    "static/js/2.57111e38.chunk.js.map": "/themuseum/static/js/2.57111e38.chunk.js.map",
     "index.html": "/themuseum/index.html",
-    "precache-manifest.98e53399add5f9a7250732539fc21f9f.js": "/themuseum/precache-manifest.98e53399add5f9a7250732539fc21f9f.js",
+    "precache-manifest.900740bec519c0a125bc13aee07810f7.js": "/themuseum/precache-manifest.900740bec519c0a125bc13aee07810f7.js",
     "service-worker.js": "/themuseum/service-worker.js",
     "static/css/2.3d637859.chunk.css.map": "/themuseum/static/css/2.3d637859.chunk.css.map",
-    "static/css/main.6042eca9.chunk.css.map": "/themuseum/static/css/main.6042eca9.chunk.css.map",
-    "static/js/2.ee6b80df.chunk.js.LICENSE.txt": "/themuseum/static/js/2.ee6b80df.chunk.js.LICENSE.txt",
-    "static/media/hero-bg2.jpg": "/themuseum/static/media/hero-bg2.5d1377fa.jpg"
+    "static/css/main.3997efd2.chunk.css.map": "/themuseum/static/css/main.3997efd2.chunk.css.map",
+    "static/js/2.57111e38.chunk.js.LICENSE.txt": "/themuseum/static/js/2.57111e38.chunk.js.LICENSE.txt",
+    "static/media/ben-garratt-HoupC-zHlLo-unsplash.jpg": "/themuseum/static/media/ben-garratt-HoupC-zHlLo-unsplash.d29c015c.jpg",
+    "static/media/chloe-evans-erHBElNC1DU-unsplash.jpg": "/themuseum/static/media/chloe-evans-erHBElNC1DU-unsplash.261d8e11.jpg",
+    "static/media/chris-barbalis-x31PAWGYbGE-unsplash.jpg": "/themuseum/static/media/chris-barbalis-x31PAWGYbGE-unsplash.6b1b03a5.jpg",
+    "static/media/debby-hudson-bb8_zSReIF0-unsplash.jpg": "/themuseum/static/media/debby-hudson-bb8_zSReIF0-unsplash.1e5d5ad6.jpg",
+    "static/media/denis-jung-nQcmPxXZ5zU-unsplash.jpg": "/themuseum/static/media/denis-jung-nQcmPxXZ5zU-unsplash.29dd4176.jpg",
+    "static/media/edwin-ashitendoh-08fd3iw5pCM-unsplash.jpg": "/themuseum/static/media/edwin-ashitendoh-08fd3iw5pCM-unsplash.64ba9842.jpg",
+    "static/media/ewien-van-bergeijk-kwant-GdYO8v2SISs-unsplash.jpg": "/themuseum/static/media/ewien-van-bergeijk-kwant-GdYO8v2SISs-unsplash.23e980a0.jpg",
+    "static/media/gregory-rakovsky-WVFOgVVma6U-unsplash.jpg": "/themuseum/static/media/gregory-rakovsky-WVFOgVVma6U-unsplash.dc06b433.jpg",
+    "static/media/hero-bg2.jpg": "/themuseum/static/media/hero-bg2.5d1377fa.jpg",
+    "static/media/james-yarema-IiWoS6Be4Fs-unsplash.jpg": "/themuseum/static/media/james-yarema-IiWoS6Be4Fs-unsplash.24b8f4ef.jpg",
+    "static/media/jerry-wang-Pvf_WTiFGng-unsplash.jpg": "/themuseum/static/media/jerry-wang-Pvf_WTiFGng-unsplash.8b9cee8d.jpg",
+    "static/media/juan-rojas-Fs_RNpOMmF8-unsplash.jpg": "/themuseum/static/media/juan-rojas-Fs_RNpOMmF8-unsplash.2d64283f.jpg",
+    "static/media/li-lin-VngNE4WQp24-unsplash.jpg": "/themuseum/static/media/li-lin-VngNE4WQp24-unsplash.24a8ff2f.jpg",
+    "static/media/meghan-schiereck-lzRO1GmKqQE-unsplash.jpg": "/themuseum/static/media/meghan-schiereck-lzRO1GmKqQE-unsplash.3c443a60.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.de5bb5c6.js",
     "static/css/2.3d637859.chunk.css",
-    "static/js/2.ee6b80df.chunk.js",
-    "static/css/main.6042eca9.chunk.css",
-    "static/js/main.f8906be4.chunk.js"
+    "static/js/2.57111e38.chunk.js",
+    "static/css/main.3997efd2.chunk.css",
+    "static/js/main.116a8951.chunk.js"
   ]
 }
