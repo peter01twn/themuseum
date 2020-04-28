@@ -1,10 +1,11 @@
 import React from 'react'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
-import Swiper from 'components/Swiper'
 import Banner from 'components/Banner'
 import Hero from 'components/Hero'
 import CardList from 'pages/index/CardList'
+import Gallery from 'pages/index/Gallery'
+import bannerImg from 'images/chris-barbalis-x31PAWGYbGE-unsplash.jpg'
 
 const Index = () => {
   return (
@@ -41,13 +42,14 @@ const Index = () => {
               <CardList />
             </div>
             <Banner
+              bgImg={bannerImg}
               title="Stay home"
               text="Come from China, spread by WHO, and take a root in the world."
               linkText="Learn more"
               href="https://www.cdc.gov.tw/Category/MPage/IJEvndG3oFaiM-h1cDhvPQ"
             />
             <section className="l-section px-0">
-              <Swiper />
+              <Gallery />
             </section>
           </div>
           <Footer />

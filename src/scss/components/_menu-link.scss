@@ -1,10 +1,11 @@
 .menu-link {
   display: inline-block;
-  color: $link-color;
   cursor: pointer;
-  transition: border-color 0.2s;
   border-bottom: 1.5px solid;
   border-color: transparent;
+  color: $link-color;
+  background-color: $body-bg;
+  transition: border-color 0.1s;
 
   &:hover,
   &--active {
@@ -14,11 +15,12 @@
 
   @each $color-name, $color in $theme-colors {
     &--#{$color-name} {
-      color: $white;
-      border-color: $color;
+      $trans-color: color-yiq($color);
+      color: $trans-color;
+      border-color: $light;
       &:hover, &.menu-link--active {
-        color: darken($white, 25%);
-        border-color: lighten($color, 25%);
+        color: darken($trans-color, 15%);
+        border-color: $white;
       }
     }
   }

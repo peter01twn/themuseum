@@ -16,15 +16,14 @@ const Collapse = ({
     let newClass = ''
 
     if (e.target !== e.currentTarget) return
-
     if (isShow) {
       newClass = removeClass('collapse--collapsing')(className)
     } else {
-      newClass = removeClass(['collapse--show', 'collapse--collapsing'])(
-        className
-      )
+      newClass = removeClass(['collapse--show', 'collapse--collapsing'])(className)
     }
+
     container.className = newClass
+    container.style.height = ''
   }
 
   useEffect(() => {

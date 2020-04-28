@@ -1,9 +1,9 @@
 import React from 'react'
 import { Row, Col, Button } from 'react-bootstrap'
 
-const Banner = ({img, title, text, linkText, onClick, href}) => {
+const Banner = ({bgImg, title, text, linkText, onClick, href}) => {
   return (
-    <section className="l-banner">
+    <section className="l-banner" style={{backgroundImage: `url(${bgImg})`}}>
       <div className="l-banner__outer">
         <div className="l-banner__inner">
           <Row>

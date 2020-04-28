@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import SwiperVendor from 'swiper'
 
-export default function Swiper() {
+export default function Swiper({ data }) {
   const swiperRef = useRef()
   useEffect(() => {
     const swiperEl = swiperRef.current
@@ -9,7 +9,7 @@ export default function Swiper() {
       speed: 400,
       slidesPerView: 'auto',
       loop: true,
-      loopedSlides: 5,
+      loopedSlides: data?.length,
       spaceBetween: 42,
       navigation: {
         nextEl: '.swiper__next-el',
@@ -25,25 +25,19 @@ export default function Swiper() {
       },
     })
   }, [])
+
+  const createSlides = () => {
+    return data.map((el, i) => (
+      <div key={i} className="swiper-slide">
+        <img src={el.img} />
+        <div className="swiper-slide__text mt-1">{el.text}</div>
+      </div>
+    ))
+  }
+
   return (
     <div ref={swiperRef} className="swiper-container">
-      <div className="swiper-wrapper">
-        <div className="swiper-slide border">
-          <img src="https://fakeimg.pl/320x460/"></img>
-        </div>
-        <div className="swiper-slide border">
-          <img src="https://fakeimg.pl/400x400/"></img>
-        </div>
-        <div className="swiper-slide border">
-          <img src="https://fakeimg.pl/250x100/"></img>
-        </div>
-        <div className="swiper-slide border">
-          <img src="https://fakeimg.pl/500x200/"></img>
-        </div>
-        <div className="swiper-slide border">
-          <img src="https://fakeimg.pl/200x500/"></img>
-        </div>
-      </div>
+      <div className="swiper-wrapper">{createSlides()}</div>
       <div className="swiper-pagination" />
       <div className="swiper__pre-el btn btn-primary" />
       <div className="swiper__next-el btn btn-primary" />

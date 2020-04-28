@@ -1,39 +1,20 @@
 .p-index {
-  &__carousel-img {
-    width: 100%;
-    height: 640px;
-
+  .swiper-slide {
     img {
-      @include object-cover;
-    }
-  }
-  .carousel-caption {
-    $padding-x: $spacer * 1.5;
-    padding-left: $padding-x;
-    padding-right: $padding-x;
-    width: 320px;
-    left: 6%;
-    right: auto;
-    bottom: 8%;
-    text-align: left;
-    background-color: $body-bg;
-  }
+      max-height: 500px;
+      object-fit: contain;
 
-  @include media-breakpoint-down(md) {
-    &__carousel-img {
-      height: 440px;
-    }
-    .carousel-caption {
-      position: static;
-      width: 100%;
-      color: $body-bg;
-      background-color: $white;
+      @include media-breakpoint-down(md) {
+        & {
+          max-height: 400px;
+        }
+      }
     }
   }
 
   .card {
     @include teaser($shadow, 1.08);
-    
+
     .card-img {
       height: 315px;
       width: 100%;

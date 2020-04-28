@@ -11,7 +11,7 @@ const Card = ({ img, title, text, onClick }) => {
         <BsCard.Title>
           <Button
             variant="link"
-            onClick={onClick ? onClick : null}
+            onClick={onClick}
             className="stretched-link"
           >
             {title}

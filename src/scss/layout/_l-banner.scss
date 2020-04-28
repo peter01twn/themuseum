@@ -1,7 +1,5 @@
 .l-banner {
-  background-position: center center;
-  background-size: cover;
-  background-color: $shadow;
+  @include bg-cover;
 
   &__outer {
     $padding-y: map-get($spacers, 5);
@@ -14,8 +12,9 @@
     padding-left: $padding-y * 2;
     padding-right: $padding-y * 2;
     
-    @include media-breakpoint-down(lg) {
-      min-width: 100%;
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+      padding: 0;
     }
   }
   
