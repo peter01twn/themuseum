@@ -46,14 +46,14 @@ export default function Header() {
                 <ul className="d-none d-lg-flex justify-content-lg-end">
                   <li>
                     <a href="#" className="text-secondary">
-                      <i className="fas fa-shopping-cart" />
-                      <span className="ml-2 is-hover__link">Shop</span>
+                      <i className="mr-2 fas fa-shopping-cart" />
+                      <Button variant="link" className="text-secondary">Shop</Button>
                     </a>
                   </li>
                   <li>
                     <a href="#" className="text-secondary">
-                      <i className="fas fa-search" />
-                      <span className="ml-2 is-hover__link">Search</span>
+                      <i className="mr-2 fas fa-search" />
+                      <Button variant="link" className="text-secondary">Search</Button>
                     </a>
                   </li>
                 </ul>
@@ -114,20 +114,20 @@ export default function Header() {
                     <Button
                       variant="shadow"
                       block
-                      className="py-3 rounded-0 text-white fs-lg"
+                      className="py-3 rounded-0 fs-lg"
                     >
                       <i className="fas fa-shopping-cart" />
-                      <span className="ml-2 is-hover__link">Shop</span>
+                      <span className="ml-2">Shop</span>
                     </Button>
                   </Col>
                   <Col as="li" sm="6" lg="auto">
                     <Button
                       variant="shadow"
                       block
-                      className="py-3 rounded-0 text-white fs-lg"
+                      className="py-3 rounded-0 fs-lg"
                     >
                       <i className="fas fa-search" />
-                      <span className="ml-2 is-hover__link">Search</span>
+                      <span className="ml-2">Search</span>
                     </Button>
                   </Col>
                 </Row>

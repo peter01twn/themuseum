@@ -93,15 +93,25 @@ $grid-gutter-width: $spacer * 3;
 $navbar-padding-x: $spacer * 3 / 2;
 
 $input-bg: $body-bg;
+$input-color: $white;
 $input-border-color: $primary;
 $input-border-radius: 0;
 $input-border-radius-lg: 0;
 $input-border-radius-sm: 0;
 $input-placeholder-color: $primary;
 
+$input-btn-focus-box-shadow: none;
+
+$btn-font-size: inherit;
+$btn-font-weight: inherit;
+$btn-border-width: 0;
 $btn-border-radius: 0;
 $btn-border-radius-lg: 0;
 $btn-border-radius-sm: 0;
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-white-space: nowrap;
 
 $card-spacer-y: $spacer * 1.5;
 $card-spacer-x: $spacer * 1.5;
@@ -111,4 +121,5 @@ $card-bg: $shadow;
 $circle-btn-size: 50px;
 
 // options
+$enable-shadows: false;
 $enable-responsive-font-sizes: true;

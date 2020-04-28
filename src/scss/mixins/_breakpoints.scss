@@ -1,0 +1,5 @@
+@mixin media-breakpoint-ipad {
+  @media (max-width: 1024px) {
+    @content
+  }
+}

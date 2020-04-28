@@ -2,9 +2,8 @@
   // nav-el vars
   $nav-el-top: calc(50% - #{$circle-btn-size} / 2);
   $nav-el-x: 10px;
-  $nav-bg: $white;
   $nav-img-color: $dark;
-  $nav-hover-bg: darken($nav-bg, 35%);
+  $nav-img-hover-color: $white;
 
   &-container {
     padding: 0 map-get($spacers, 5);
@@ -27,9 +26,11 @@
     &-item {
       $size: 10px;
       @include circle($size);
-      @include teaser($shadow, 1.3);
-      margin: 0 $size / 2;
+      @include teaser($shadow, 1.3) {
+        @include circle($size);
+      }
       display: inline-block;
+      margin: 0 $size / 2;
       cursor: pointer;
 
       &::before {
@@ -37,48 +38,52 @@
       }
       &--active {
         background-color: $white;
-        
+
         &:hover {
           background-color: $white;
         }
       }
     }
-
   }
 
   // nav-el
   &__pre-el {
-    @include circle;
-    width: $circle-btn-size;
-    height: $circle-btn-size;
+    @include circle($circle-btn-size);
     position: absolute;
     z-index: 10;
     top: $nav-el-top;
     left: $nav-el-x;
     overflow: hidden;
-    background-color: $nav-bg;
     cursor: pointer;
-    transition: background-color .1s;
+    transition: all 0.1s;
 
     &::before {
       content: '';
       display: block;
-      width: 100%;
-      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
       background-color: $nav-img-color;
       clip-path: polygon(55% 30%, 60% 30%, 40% 50%, 60% 70%, 55% 70%, 35% 50%);
     }
 
     &:hover {
-      background-color: $nav-hover-bg;
+      transform: scale(.85);
+      &::before {
+        background-color: $nav-img-hover-color;
+      }
     }
 
     &:active,
     &.active {
-      background-color: $nav-img-color;
-
+      transform: scale(.85);
       &::before {
-        background-color: $nav-bg;
+        background-color: $nav-img-color;
+        @include media-breakpoint-ipad {
+          background-color: $nav-img-hover-color;
+        }
       }
     }
   }

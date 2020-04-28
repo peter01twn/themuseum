@@ -1,0 +1,15 @@
+@mixin transition-line-decoration(
+  $width: 2px,
+  $color: currentColor,
+  $disable-length: 0,
+  $hover-length: 100%
+) {
+  background-position: bottom center;
+  transition: background-size 0.2s;
+  @include horizontal-bg-line($width, $disable-length);
+
+  &:hover, &--active {
+    text-decoration: none;
+    @include horizontal-bg-line($width, $hover-length, $color);
+  }
+}

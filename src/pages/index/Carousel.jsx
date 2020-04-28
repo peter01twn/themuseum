@@ -3,7 +3,6 @@ import React from 'react'
 const Carousel = () => {
   return (
     <>
-      
       <div className="l-section">
         <div className="l-section border-bottom border-light">
           <div className="d-md-flex justify-content-between">

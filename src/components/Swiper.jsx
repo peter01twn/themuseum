@@ -45,8 +45,8 @@ export default function Swiper() {
         </div>
       </div>
       <div className="swiper-pagination" />
-      <div className="swiper__pre-el" />
-      <div className="swiper__next-el" />
+      <div className="swiper__pre-el btn btn-primary" />
+      <div className="swiper__next-el btn btn-primary" />
     </div>
   )
 }
