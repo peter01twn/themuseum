@@ -1,58 +1,36 @@
 .parallax {
-  $hover-block-height: 670px;
+  $show-window-height: 670px;
   position: relative;
 
-  &__fixed-block {
+  &__fixed {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
   }
 
-  &__hover-block {
+  &__show-window {
     display: block;
     position: relative;
     z-index: 100;
-    height: $hover-block-height;
+    height: $show-window-height;
     background-color: transparent;
   }
 
-  &__scroll-block {
+  &__scroll {
     position: relative;
     z-index: 100;
     background-color: $body-bg;
-    // background-image: linear-gradient(
-    //   to bottom,
-    //   transparent 0,
-    //   transparent $hover-block-height,
-    //   $body-bg $hover-block-height
-    // );
   }
 
   @include media-breakpoint-down(lg) {
-    &__hover-block {
-      height: $hover-block-height * 0.8;
+    &__show-window {
+      height: $show-window-height * 0.8;
     }
-    // &__scroll-block {
-    //   background-image: linear-gradient(
-    //     to bottom,
-    //     transparent 0,
-    //     transparent 540px,
-    //     $body-bg 540px
-    //   );
-    // }
   }
   @include media-breakpoint-down(md) {
-    &__hover-block {
-      height: $hover-block-height * 0.6;
+    &__show-window {
+      height: $show-window-height * 0.6;
     }
-    // &__scroll-block {
-    //   background-image: linear-gradient(
-    //     to bottom,
-    //     transparent 0,
-    //     transparent 400px,
-    //     $body-bg 400px
-    //   );
-    // }
   }
 }

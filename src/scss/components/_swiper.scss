@@ -54,6 +54,8 @@
   }
 
   // nav-el
+  $arrow-size: $circle-btn-size / 3;
+
   &__pre-el {
     @include circle($circle-btn-size);
     position: absolute;
@@ -68,28 +70,30 @@
       content: '';
       display: block;
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: $nav-img-color;
-      clip-path: polygon(55% 30%, 60% 30%, 40% 50%, 60% 70%, 55% 70%, 35% 50%);
+      width: $arrow-size;
+      height: $arrow-size;
+      top: calc(50% - #{$arrow-size} / 2);
+      left: calc(50% - #{$arrow-size} / 3);
+      border-top: 2px solid $nav-img-color;
+      border-left: 2px solid $nav-img-color;
+      transform: rotate(-45deg);
+      // clip-path: polygon(55% 30%, 60% 30%, 40% 50%, 60% 70%, 55% 70%, 35% 50%);
     }
 
     &:hover {
-      transform: scale(.85);
+      transform: scale(.75);
       &::before {
-        background-color: $nav-img-hover-color;
+        border-color: $nav-img-hover-color;
       }
     }
 
     &:active,
     &--active {
-      transform: scale(.85);
+      transform: scale(.75);
       &::before {
-        background-color: $nav-img-color;
+        border-color: $nav-img-color;
         @include media-breakpoint-ipad {
-          background-color: $nav-img-hover-color;
+          border-color: $nav-img-color;
         }
       }
     }
@@ -100,7 +104,10 @@
     right: $nav-el-x;
 
     &::before {
-      clip-path: polygon(45% 30%, 40% 30%, 60% 50%, 40% 70%, 45% 70%, 65% 50%);
+      left: auto;
+      right: calc(50% - #{$arrow-size} / 3);
+      transform: rotate(135deg);
+      // clip-path: polygon(45% 30%, 40% 30%, 60% 50%, 40% 70%, 45% 70%, 65% 50%);
     }
   }
 }

@@ -1,12 +1,32 @@
 import React from 'react'
-import heroBg from 'images/hero-bg2.jpg'
 
-const Hero = ({ children }) => {
+const Hero = ({ children, className = '', ...attrs }) => {
   return (
-    <div className="parallax">
-      <div className="parallax__fixed-block">
-        <img className="object-cover mt-6 mt-lg-n5" src={heroBg}></img>
-      </div>
+    <div className={`parallax ${className}`} {...attrs}>
+      {children}
+    </div>
+  )
+}
+
+Hero.Fixed = ({ children, className = '', ...attrs }) => {
+  return (
+    <div className={`parallax__fixed ${className}`} {...attrs}>
+      {children}
+    </div>
+  )
+}
+
+Hero.ShowWindow = ({ children, className = '', ...attrs }) => {
+  return (
+    <div className={`parallax__show-window ${className}`} {...attrs}>
+      {children}
+    </div>
+  )
+}
+
+Hero.Scroll = ({ children, className = '', ...attrs }) => {
+  return (
+    <div className={`parallax__scroll ${className}`} {...attrs}>
       {children}
     </div>
   )

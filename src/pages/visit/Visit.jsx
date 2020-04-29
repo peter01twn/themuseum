@@ -8,7 +8,7 @@ import Gallery from 'pages/index/Gallery'
 import bannerImg from 'images/chris-barbalis-x31PAWGYbGE-unsplash.jpg'
 import heroBg from 'images/hero-bg2.jpg'
 
-const Index = () => {
+const Visit = () => {
   return (
     <>
       <Header />
@@ -16,14 +16,14 @@ const Index = () => {
         <Hero.Fixed>
           <img className="object-cover mt-6 mt-lg-n5" src={heroBg}></img>
         </Hero.Fixed>
-        <Hero.ShowWindow className="d-flex align-items-end">
+        <Hero.Hover className="d-flex align-items-end">
           <div className="l-section">
             <h2 className="l-section__title">
               Welcome to the <span className="h1 text-danger">COVID-19</span>{' '}
               Museum
             </h2>
           </div>
-        </Hero.ShowWindow>
+        </Hero.Hover>
         <Hero.Scroll>
           <div className="p-index">
             <div className="l-section border-bottom border-light">
@@ -63,4 +63,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Visit

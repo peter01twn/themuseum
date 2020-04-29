@@ -14,7 +14,7 @@ const HeaderSubMenu = ({ data = [], onClick, isShow }) => {
           >
             <i className="d-lg-none mr-3 fas fa-arrow-alt-circle-left" />
             <span>{el.title}</span>
-            <i class="d-none d-lg-block fas fa-arrow-circle-right" />
+            <i className="d-none d-lg-block fas fa-arrow-circle-right" />
           </Link>
         </Col>
       )

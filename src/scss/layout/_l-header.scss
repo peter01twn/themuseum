@@ -34,4 +34,19 @@
     width: 100%;
     z-index: $zindex-sticky;
   }
+
+  *[class*='container'] {
+    padding-left: map-get($spacers, 3);
+    padding-right: map-get($spacers, 3);
+  }
+
+  .row {
+    margin-left: - map-get($spacers, 3);
+    margin-right: - map-get($spacers, 3);
+
+    *[class*='col'] {
+      padding-left: map-get($spacers, 3);
+      padding-right: map-get($spacers, 3);
+    }
+  }
 }

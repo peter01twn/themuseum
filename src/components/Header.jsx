@@ -95,7 +95,8 @@ export default function Header() {
     setSubMenuShow(false)
   }
 
-  const handleMenuClick = (index) => {
+  const handleMenuClick = (index) =>
+  () => {
     if (isSubMenuShow && subMenuIndex === index) {
       setSubMenuShow(false)
       return
@@ -117,8 +118,10 @@ export default function Header() {
       <Col key={i} as="li" sm="6" lg="auto">
         <Link
           to={el.to ? el.to : ''}
-          onClick={() => handleMenuClick(i)}
-          className="menu-link py-3 pt-lg-0 pb-lg-5"
+          onClick={handleMenuClick(i)}
+          className={`menu-link ${
+            isSubMenuShow && subMenuIndex === i ? 'menu-link--active' : ''
+          } py-3 pt-lg-0 pb-lg-5`}
         >
           {el.title}
           <i className="d-lg-none float-right fas fa-arrow-alt-circle-right" />
@@ -130,15 +133,17 @@ export default function Header() {
   return (
     <header className="l-header mb-0">
       <Navbar
-        className={`pt-5 pb-4 pb-lg-0 border-bottom ${
+        variant="dark"
+        bg="dark"
+        className={`py-4 py-lg-5 border-bottom ${
           isMenuShow || isSubMenuShow ? 'border-light' : 'border-dark'
         }`}
       >
-        <Container fluid="lg">
-          <Link to="/" className="text-decoration-none">
-            <p className="h3">The Museum</p>
-          </Link>
-          <div className="l-header__toggle position-relative">
+        <div className="l-section d-flex justify-content-between p-0">
+          <Navbar.Brand as={Link} to="/" className="text-decoration-none virtical-middle">
+            <span className="h3">COVID - 19</span>
+          </Navbar.Brand>
+          <div className="l-header__toggle position-relative virtical-middle">
             {!isMenuShow ? (
               <i className="fas fa-bars" />
             ) : (
@@ -152,56 +157,54 @@ export default function Header() {
               Menu
             </Button>
           </div>
-          <nav className={`l-header__navbar-collapse bg-dark`}>
+          <nav className={`l-header__navbar-collapse mb-lg-n5 bg-dark px-4 px-lg-0`}>
             <Collapse expand="lg" isShow={isMenuShow} className="mb-0">
-              <Container fluid="lg" className="d-block px-lg-0">
-                <ul className="d-none d-lg-flex justify-content-lg-end">
-                  <li>
-                    <a href="#" className="text-secondary">
-                      <i className="mr-2 fas fa-shopping-cart" />
-                      <Button variant="link" className="text-secondary">
-                        Shop
-                      </Button>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="text-secondary">
-                      <i className="mr-2 fas fa-search" />
-                      <Button variant="link" className="text-secondary">
-                        Search
-                      </Button>
-                    </a>
-                  </li>
-                </ul>
-                <Row as="ul" className="flex-lg-nowrap mt-lg-3 mb-0">
-                  {createMenu()}
-                </Row>
-                <Row as="ul" className="d-lg-none justify-content-lg-end mt-3">
-                  <Col as="li" sm="6" lg="auto" className="pb-3 pb-lg-0">
-                    <Button
-                      variant="shadow"
-                      block
-                      className="py-3 rounded-0 fs-lg"
-                    >
-                      <i className="fas fa-shopping-cart" />
-                      <span className="ml-2">Shop</span>
+              <ul className="d-none d-lg-flex justify-content-lg-end">
+                <li>
+                  <a href="#" className="text-secondary">
+                    <i className="mr-2 fas fa-shopping-cart" />
+                    <Button variant="link" className="text-secondary">
+                      Shop
                     </Button>
-                  </Col>
-                  <Col as="li" sm="6" lg="auto">
-                    <Button
-                      variant="shadow"
-                      block
-                      className="py-3 rounded-0 fs-lg"
-                    >
-                      <i className="fas fa-search" />
-                      <span className="ml-2">Search</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-secondary">
+                    <i className="mr-2 fas fa-search" />
+                    <Button variant="link" className="text-secondary">
+                      Search
                     </Button>
-                  </Col>
-                </Row>
-              </Container>
+                  </a>
+                </li>
+              </ul>
+              <Row as="ul" className="flex-lg-nowrap mt-lg-3 mb-0">
+                {createMenu()}
+              </Row>
+              <Row as="ul" className="d-lg-none justify-content-lg-end mt-3">
+                <Col as="li" sm="6" lg="auto" className="pb-3 pb-lg-0">
+                  <Button
+                    variant="shadow"
+                    block
+                    className="py-3 rounded-0 fs-lg"
+                  >
+                    <i className="fas fa-shopping-cart" />
+                    <span className="ml-2">Shop</span>
+                  </Button>
+                </Col>
+                <Col as="li" sm="6" lg="auto">
+                  <Button
+                    variant="shadow"
+                    block
+                    className="py-3 rounded-0 fs-lg"
+                  >
+                    <i className="fas fa-search" />
+                    <span className="ml-2">Search</span>
+                  </Button>
+                </Col>
+              </Row>
             </Collapse>
           </nav>
-        </Container>
+        </div>
       </Navbar>
       <div
         className={`l-header__sub-collapse bg-dark`}
@@ -210,13 +213,13 @@ export default function Header() {
       >
         <Collapse isShow={isSubMenuShow} response="md">
           <Slide isShow={isSubMenuShow} expand="lg">
-            <Container as="nav" fluid="lg" className="px-lg-0">
+            <div className="l-section py-2">
               <SubMenu
                 isShow={isSubMenuShow}
                 data={menuData[subMenuIndex]?.subMenu}
                 onClick={handleSubMenuClick}
               />
-            </Container>
+            </div>
           </Slide>
         </Collapse>
       </div>
