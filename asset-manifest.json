@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/themuseum/static/css/main.3997efd2.chunk.css",
-    "main.js": "/themuseum/static/js/main.116a8951.chunk.js",
-    "main.js.map": "/themuseum/static/js/main.116a8951.chunk.js.map",
+    "main.css": "/themuseum/static/css/main.b1e09893.chunk.css",
+    "main.js": "/themuseum/static/js/main.539c5390.chunk.js",
+    "main.js.map": "/themuseum/static/js/main.539c5390.chunk.js.map",
     "runtime-main.js": "/themuseum/static/js/runtime-main.de5bb5c6.js",
     "runtime-main.js.map": "/themuseum/static/js/runtime-main.de5bb5c6.js.map",
     "static/css/2.3d637859.chunk.css": "/themuseum/static/css/2.3d637859.chunk.css",
-    "static/js/2.57111e38.chunk.js": "/themuseum/static/js/2.57111e38.chunk.js",
-    "static/js/2.57111e38.chunk.js.map": "/themuseum/static/js/2.57111e38.chunk.js.map",
+    "static/js/2.edc8720a.chunk.js": "/themuseum/static/js/2.edc8720a.chunk.js",
+    "static/js/2.edc8720a.chunk.js.map": "/themuseum/static/js/2.edc8720a.chunk.js.map",
     "index.html": "/themuseum/index.html",
-    "precache-manifest.900740bec519c0a125bc13aee07810f7.js": "/themuseum/precache-manifest.900740bec519c0a125bc13aee07810f7.js",
+    "precache-manifest.05a8b9024159f5932a04e8c1f988ab11.js": "/themuseum/precache-manifest.05a8b9024159f5932a04e8c1f988ab11.js",
     "service-worker.js": "/themuseum/service-worker.js",
     "static/css/2.3d637859.chunk.css.map": "/themuseum/static/css/2.3d637859.chunk.css.map",
-    "static/css/main.3997efd2.chunk.css.map": "/themuseum/static/css/main.3997efd2.chunk.css.map",
-    "static/js/2.57111e38.chunk.js.LICENSE.txt": "/themuseum/static/js/2.57111e38.chunk.js.LICENSE.txt",
+    "static/css/main.b1e09893.chunk.css.map": "/themuseum/static/css/main.b1e09893.chunk.css.map",
+    "static/js/2.edc8720a.chunk.js.LICENSE.txt": "/themuseum/static/js/2.edc8720a.chunk.js.LICENSE.txt",
     "static/media/ben-garratt-HoupC-zHlLo-unsplash.jpg": "/themuseum/static/media/ben-garratt-HoupC-zHlLo-unsplash.d29c015c.jpg",
     "static/media/chloe-evans-erHBElNC1DU-unsplash.jpg": "/themuseum/static/media/chloe-evans-erHBElNC1DU-unsplash.261d8e11.jpg",
     "static/media/chris-barbalis-x31PAWGYbGE-unsplash.jpg": "/themuseum/static/media/chris-barbalis-x31PAWGYbGE-unsplash.6b1b03a5.jpg",
@@ -32,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.de5bb5c6.js",
     "static/css/2.3d637859.chunk.css",
-    "static/js/2.57111e38.chunk.js",
-    "static/css/main.3997efd2.chunk.css",
-    "static/js/main.116a8951.chunk.js"
+    "static/js/2.edc8720a.chunk.js",
+    "static/css/main.b1e09893.chunk.css",
+    "static/js/main.539c5390.chunk.js"
   ]
 }
