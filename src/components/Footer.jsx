@@ -20,12 +20,12 @@ export default function Footer() {
             <ul className="d-flex">
               <li>
                 <Icon>
-                  <i className="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f" />
                 </Icon>
               </li>
               <li>
                 <Icon>
-                  <i className="fab fa-twitter"></i>
+                  <i className="fab fa-twitter" />
                 </Icon>
               </li>
               <li>

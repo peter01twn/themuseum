@@ -1,3 +1,39 @@
-.nav-item {
-  margin-bottom: map-get($spacers, 1);
+.nav {
+  margin-left: -$nav-item-padding-x;
+  margin-right: -$nav-item-padding-x;
+
+  .nav-item {
+    padding-left: $nav-item-padding-x;
+    padding-right: $nav-item-padding-x;
+  }
+}
+
+.nav--vertical {
+  flex-direction: column;
+
+  .nav-item ~ .nav-item {
+    margin-top: map-get($spacers, 2);
+  }
+}
+
+@each $breakpoint, $val in $grid-breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+    .nav-#{$breakpoint}--vertical {
+      flex-direction: column;
+
+      .nav-item ~ .nav-item {
+        margin-top: map-get($spacers, 2);
+      }
+    }
+  }
+
+  @include media-breakpoint-down($breakpoint) {
+    .nav-max-#{$breakpoint}--vertical {
+      flex-direction: column;
+
+      .nav-item ~ .nav-item {
+        margin-top: map-get($spacers, 2);
+      }
+    }
+  }
 }

@@ -1,5 +1,5 @@
 .row--wrap {
-  & > * {
+  & > *[class*='col'] {
     margin-top: map-get($spacers, 4);
   }
 }

@@ -1,11 +1,10 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
 
-export default function Icon({ className, style, children, ...attrs }) {
+export default function Icon({ className = '', style = {}, children, as, variant = 'dark', ...attrs }) {
+  const Component = as ? as : 'button'
   return (
-    <Button
-      variant="dark"
-      className={`circle p-0 d-flex justify-content-center align-items-center ${className}`}
+    <Component
+      className={`btn btn-${variant} circle p-0 vertical-middle text-center border-0 ${className}`}
       style={{
         width: '50px',
         height: '50px',
@@ -14,6 +13,6 @@ export default function Icon({ className, style, children, ...attrs }) {
       {...attrs}
     >
       {children}
-    </Button>
+    </Component>
   )
 }

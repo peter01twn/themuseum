@@ -1,3 +1,14 @@
+@mixin transition-line-decoration-hover(
+  $width: 2px,
+  $color: currentColor,
+  $hover-length: 100%
+) {
+  &:hover {
+    text-decoration: none;
+    @include horizontal-bg-line($width, $hover-length, $color);
+  }
+}
+
 @mixin transition-line-decoration(
   $width: 2px,
   $color: currentColor,
@@ -8,8 +19,8 @@
   transition: background-size 0.2s;
   @include horizontal-bg-line($width, $disable-length);
 
-  &:hover, &--active {
-    text-decoration: none;
-    @include horizontal-bg-line($width, $hover-length, $color);
+  &:hover,
+  &--active {
+    @include transition-line-decoration-hover($width, $color, $hover-length);
   }
 }

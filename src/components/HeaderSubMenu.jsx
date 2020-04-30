@@ -8,7 +8,7 @@ const HeaderSubMenu = ({ data = [], onClick, isShow }) => {
       return (
         <Col key={i} as="li" lg="4">
           <Link
-            to={el.to ? el.to : '' }
+            to={el.to ? el.to : '#' }
             onClick={onClick}
             className="menu-link menu-link--primary w-100 d-flex align-items-center justify-content-lg-between px-0 py-3 py-lg-4 fs-md"
           >

@@ -6,4 +6,40 @@
   .card-text {
     color: $secondary;
   }
+
+  .card-img {
+    height: 315px;
+    width: 100%;
+
+    img {
+      @include object-cover;
+    }
+  }
+
+  &--teaser {
+    @include teaser($shadow, 1.08);
+
+    &__img {
+      overflow: hidden;
+
+      img {
+        @include teaser-transition;
+      }
+    }
+
+    &:hover .card--teaser__img img {
+      @include teaser-scale(1.08);
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .card-img {
+      height: 270px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .card-img {
+      height: 230px;
+    }
+  }
 }

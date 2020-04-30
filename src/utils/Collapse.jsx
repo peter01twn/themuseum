@@ -18,12 +18,12 @@ const Collapse = ({
     if (e.target !== e.currentTarget) return
     if (isShow) {
       newClass = removeClass('collapse--collapsing')(className)
+      container.style.height = ''
     } else {
       newClass = removeClass(['collapse--show', 'collapse--collapsing'])(className)
     }
 
     container.className = newClass
-    container.style.height = ''
   }
 
   useEffect(() => {
@@ -36,8 +36,11 @@ const Collapse = ({
       container.className = newClass
       container.style.height = container.scrollHeight + 'px'
     } else {
+      container.style.height = container.scrollHeight + 'px'
       const newClass = addClass(['collapse--collapsing'])(className)
       container.className = newClass
+      // reflow
+      const h = container.scrollHeight + 'px'
       container.style.height = ''
     }
   }, [isShow])

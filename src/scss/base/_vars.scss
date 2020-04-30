@@ -17,6 +17,7 @@ $secondary: $gray-500;
 $light: $white;
 $bright: $gray-800;
 $shadow: #1d1d1d;
+$light-shadow: #f0f0f0;
 
 $colors: (
   'black': $black,
@@ -25,7 +26,8 @@ $colors: (
 $theme-colors: (
   'shadow': $shadow,
   'light': $light,
-  'bright': $bright
+  'bright': $bright,
+  'light-shadow': $light-shadow,
 );
 
 // font size
@@ -116,22 +118,29 @@ $btn-focus-box-shadow: none;
 $btn-active-box-shadow: none;
 $btn-white-space: nowrap;
 
-
-$breadcrumb-font-size:              null !default;
-$breadcrumb-padding-y:              .75rem !default;
-$breadcrumb-padding-x:              1rem !default;
-$breadcrumb-item-padding:           .5rem !default;
-$breadcrumb-margin-bottom:          1rem !default;
-$breadcrumb-bg:                     $light;
-$breadcrumb-divider-color:          $gray-600 !default;
-$breadcrumb-active-color:           $gray-600 !default;
-$breadcrumb-divider:                quote(">") !default;
-$breadcrumb-border-radius:          0;
+$breadcrumb-font-size: null !default;
+$breadcrumb-padding-y: 0.75rem !default;
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding: 0.5rem !default;
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-bg: $light;
+$breadcrumb-divider-color: $dark;
+$breadcrumb-active-color: $bright;
+$breadcrumb-divider: quote('>') !default;
+$breadcrumb-border-radius: 0;
 
 $card-spacer-y: $spacer * 1.5;
 $card-spacer-x: $spacer * 1.5;
+$card-border-width: 0;
 $card-border-radius: 0;
 $card-bg: $shadow;
+
+$nav-item-padding-y: 0;
+$nav-item-padding-x: $spacer;
+$nav-link-padding-y: 0;
+$nav-link-padding-x: 0;
+
+$alert-border-radius: 0;
 
 $circle-btn-size: 50px;
 

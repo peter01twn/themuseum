@@ -1,0 +1,8 @@
+@each $theme, $color in $theme-colors {
+  .breadcrumb--#{$theme} {
+    .breadcrumb-item a {
+      color: $color;
+      @include transition-line-decoration;
+    }
+  }
+}

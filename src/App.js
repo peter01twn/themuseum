@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Index from './pages/index/Index'
 import Visit from './pages/visit/Visit'
+import Events from './pages/events/Events'
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         <Switch>
           <Route path="/visit">
             <Visit />
+          </Route>
+          <Route path="/events">
+            <Events />
           </Route>
           <Route path="/">
             <Index />

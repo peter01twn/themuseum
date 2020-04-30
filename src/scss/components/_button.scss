@@ -133,3 +133,10 @@ fieldset:disabled a.btn {
 
   // No need for an active state here
 }
+
+.btn-clean {
+  padding: 0;
+  border: none;  
+  width: 100%;
+  background-color: transparent;
+}

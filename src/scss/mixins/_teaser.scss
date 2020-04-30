@@ -21,3 +21,12 @@
     transform: scale($active-size);
   }
 }
+
+@mixin teaser-transition() {
+  transition: transform 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53),
+    background-color 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+@mixin teaser-scale($active-size) {
+  transform: scale($active-size);
+}

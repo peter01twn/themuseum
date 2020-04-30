@@ -13,8 +13,6 @@
   }
 
   .card {
-    @include teaser($shadow, 1.08);
-
     .card-img {
       height: 315px;
       width: 100%;

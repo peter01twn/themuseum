@@ -1,0 +1,35 @@
+.theme-light {
+  background-color: $light;
+
+  .breadcrumb a,
+  .nav-link,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  div {
+    color: $dark;
+  }
+
+  .btn {
+    &-link {
+      color: $dark;
+    }
+  }
+
+  .card {
+    background-color: $light-shadow;
+
+    &::before {
+      background-color: $light-shadow;
+    }
+
+    &-title,
+    &-text {
+      color: $dark;
+    }
+  }
+}

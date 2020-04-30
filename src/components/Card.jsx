@@ -3,8 +3,8 @@ import { Card as BsCard, Button } from 'react-bootstrap'
 
 const Card = ({ img, title, text, onClick }) => {
   return (
-    <BsCard as="a" href="#">
-      <div className="card-img">
+    <BsCard className="card--teaser">
+      <div className="card-img card--teaser__img">
         <BsCard.Img variant="top" src={img} className="img-fluid" />
       </div>
       <BsCard.Body>

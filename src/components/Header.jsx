@@ -47,6 +47,7 @@ const menuData = [
   {
     id: 2,
     title: 'Exhibitions and events',
+    to: '/events'
   },
   {
     id: 3,
@@ -117,7 +118,7 @@ export default function Header() {
     return menuData.map((el, i) => (
       <Col key={i} as="li" sm="6" lg="auto">
         <Link
-          to={el.to ? el.to : ''}
+          to={el.to ? el.to : '#'}
           onClick={handleMenuClick(i)}
           className={`menu-link ${
             isSubMenuShow && subMenuIndex === i ? 'menu-link--active' : ''
@@ -140,10 +141,10 @@ export default function Header() {
         }`}
       >
         <div className="l-section d-flex justify-content-between p-0">
-          <Navbar.Brand as={Link} to="/" className="text-decoration-none virtical-middle">
+          <Navbar.Brand as={Link} to="/" className="text-decoration-none vertical-middle">
             <span className="h3">COVID - 19</span>
           </Navbar.Brand>
-          <div className="l-header__toggle position-relative virtical-middle">
+          <div className="l-header__toggle position-relative vertical-middle">
             {!isMenuShow ? (
               <i className="fas fa-bars" />
             ) : (
