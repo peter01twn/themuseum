@@ -12,7 +12,7 @@ const menuData = [
     subMenu: [
       {
         title: 'Visit',
-        to: '#',
+        to: '/visit',
       },
       {
         title: 'Family visit',
@@ -136,7 +136,7 @@ export default function Header() {
         variant="dark"
         bg="dark"
         className={`py-4 py-lg-5 border-bottom ${
-          isMenuShow || isSubMenuShow ? 'border-light' : 'border-dark'
+          isMenuShow || isSubMenuShow ? 'border-bright' : 'border-dark'
         }`}
       >
         <div className="l-section d-flex justify-content-between p-0">

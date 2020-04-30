@@ -26,7 +26,7 @@ const Index = () => {
         </Hero.ShowWindow>
         <Hero.Scroll>
           <div className="p-index">
-            <div className="l-section border-bottom border-light">
+            <div className="l-section border-bottom border-bright">
               <div className="d-md-flex justify-content-between">
                 <h2 className="mb-4 mb-md-0">
                   Discover two million years of human history and culture.
@@ -56,9 +56,9 @@ const Index = () => {
               <Gallery />
             </section>
           </div>
-          <Footer />
         </Hero.Scroll>
       </Hero>
+      <Footer />
     </>
   )
 }

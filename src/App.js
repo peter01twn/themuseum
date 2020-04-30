@@ -4,13 +4,17 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Index from './pages/index/Index.jsx'
+import Index from './pages/index/Index'
+import Visit from './pages/visit/Visit'
 
 function App() {
   return (
     <Router>
       <div className="App overflow-hidden">
         <Switch>
+          <Route path="/visit">
+            <Visit />
+          </Route>
           <Route path="/">
             <Index />
           </Route>

@@ -16,10 +16,10 @@
   @each $color-name, $color in $theme-colors {
     &--#{$color-name} {
       $trans-color: color-yiq($color);
-      color: $trans-color;
-      border-color: $light;
+      color: $color;
+      border-color: $trans-color;
       &:hover, &.menu-link--active {
-        color: darken($trans-color, 15%);
+        color: darken($color, 25%);
         border-color: $white;
       }
     }

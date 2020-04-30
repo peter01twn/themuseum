@@ -12,7 +12,7 @@ import Icon from 'components/Icon'
 
 export default function Footer() {
   return (
-    <footer className="bg-shadow">
+    <footer className="l-footer bg-shadow">
       <div className="l-section">
         <Row as="section" className="pb-4 border-bottom border-light">
           <Col md="6">

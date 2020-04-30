@@ -10,7 +10,7 @@ const HeaderSubMenu = ({ data = [], onClick, isShow }) => {
           <Link
             to={el.to ? el.to : '' }
             onClick={onClick}
-            className="menu-link menu-link--light w-100 d-flex align-items-center justify-content-lg-between px-0 py-3 py-lg-4 fs-md"
+            className="menu-link menu-link--primary w-100 d-flex align-items-center justify-content-lg-between px-0 py-3 py-lg-4 fs-md"
           >
             <i className="d-lg-none mr-3 fas fa-arrow-alt-circle-left" />
             <span>{el.title}</span>
