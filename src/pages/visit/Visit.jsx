@@ -38,7 +38,7 @@ const Visit = () => {
                 linkProps={{ to: '/visit' }}
                 active
               >
-                Data
+                Visit
               </Breadcrumb.Item>
             </Breadcrumb>
             <Nav className="d-flex align-items-center mb-0">

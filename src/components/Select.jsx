@@ -27,7 +27,7 @@ const Select = ({
     toggleShow()
     setSelected({ value, text: children })
     if (onClick) {
-      onClick(value, e)
+      onClick(value, children, e)
     }
   }
 
@@ -43,11 +43,11 @@ const Select = ({
         {selected.text ? selected.text : placeholder}
         <div className="select__icon" />
       </div>
-      <Collapse isShow={show}>
-        <div className="select__list">
+      <div className="select__list">
+        <Collapse isShow={show}>
           <Provider value={{ onClick: itemClick }}>{children}</Provider>
-        </div>
-      </Collapse>
+        </Collapse>
+      </div>
     </div>
   )
 }

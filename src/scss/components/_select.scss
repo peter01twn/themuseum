@@ -1,10 +1,9 @@
 .select {
   position: relative;
+  z-index: $zindex-dropdown;
   display: inline-block;
-  border: $select-border-width solid $select-border-color;
   color: $select-color;
   background-color: $select-bg;
-  overflow: hidden;
   cursor: pointer;
   user-select: none;
 
@@ -12,6 +11,7 @@
     @include select-content;
 
     position: relative;
+    border: $select-border-width solid $select-border-color;
   }
 
   &__icon {
@@ -19,7 +19,10 @@
   }
 
   &__list {
-    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     margin: 0;
   }
 
@@ -52,6 +55,9 @@
   &--active {
     .select__icon {
       @include select-icon-active;
+    }
+    .select__list {
+      background-color: color-yiq($select-bg);
     }
   }
 }
