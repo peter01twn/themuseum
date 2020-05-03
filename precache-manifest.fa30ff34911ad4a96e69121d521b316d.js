@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8868cfd9aa6c8522ab2434c4a59b806",
+    "revision": "2ab806c5bd1bb768a23bbf1890ce67f8",
     "url": "/themuseum/index.html"
   },
   {
-    "revision": "8fbba15534d8b7cc207f",
+    "revision": "3e2f90e32d26f05a6a40",
     "url": "/themuseum/static/css/2.3d637859.chunk.css"
   },
   {
-    "revision": "4e68d9cd5ce751ec7e47",
-    "url": "/themuseum/static/css/main.64aa3c86.chunk.css"
+    "revision": "db51eec395b06ecb5070",
+    "url": "/themuseum/static/css/main.0b6f27f2.chunk.css"
   },
   {
-    "revision": "8fbba15534d8b7cc207f",
-    "url": "/themuseum/static/js/2.103e1d8d.chunk.js"
+    "revision": "3e2f90e32d26f05a6a40",
+    "url": "/themuseum/static/js/2.30fe8f3e.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/themuseum/static/js/2.103e1d8d.chunk.js.LICENSE.txt"
+    "url": "/themuseum/static/js/2.30fe8f3e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4e68d9cd5ce751ec7e47",
-    "url": "/themuseum/static/js/main.8c0437f6.chunk.js"
+    "revision": "db51eec395b06ecb5070",
+    "url": "/themuseum/static/js/main.400c2455.chunk.js"
   },
   {
     "revision": "ff7fd12f60a7d3c2940c",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "29dd41762cdfde0750314f438f732587",
     "url": "/themuseum/static/media/denis-jung-nQcmPxXZ5zU-unsplash.29dd4176.jpg"
+  },
+  {
+    "revision": "10d1ec56e11f28ddc5b906c647db6eb0",
+    "url": "/themuseum/static/media/edward-howell-Jbf9nNe_qaE-unsplash.10d1ec56.jpg"
   },
   {
     "revision": "64ba984217bdb9e12562766331453069",

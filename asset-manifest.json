@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/themuseum/static/css/main.64aa3c86.chunk.css",
-    "main.js": "/themuseum/static/js/main.8c0437f6.chunk.js",
-    "main.js.map": "/themuseum/static/js/main.8c0437f6.chunk.js.map",
+    "main.css": "/themuseum/static/css/main.0b6f27f2.chunk.css",
+    "main.js": "/themuseum/static/js/main.400c2455.chunk.js",
+    "main.js.map": "/themuseum/static/js/main.400c2455.chunk.js.map",
     "runtime-main.js": "/themuseum/static/js/runtime-main.de5bb5c6.js",
     "runtime-main.js.map": "/themuseum/static/js/runtime-main.de5bb5c6.js.map",
     "static/css/2.3d637859.chunk.css": "/themuseum/static/css/2.3d637859.chunk.css",
-    "static/js/2.103e1d8d.chunk.js": "/themuseum/static/js/2.103e1d8d.chunk.js",
-    "static/js/2.103e1d8d.chunk.js.map": "/themuseum/static/js/2.103e1d8d.chunk.js.map",
+    "static/js/2.30fe8f3e.chunk.js": "/themuseum/static/js/2.30fe8f3e.chunk.js",
+    "static/js/2.30fe8f3e.chunk.js.map": "/themuseum/static/js/2.30fe8f3e.chunk.js.map",
     "index.html": "/themuseum/index.html",
-    "precache-manifest.5828365c852e30133824dd522d2c261a.js": "/themuseum/precache-manifest.5828365c852e30133824dd522d2c261a.js",
+    "precache-manifest.fa30ff34911ad4a96e69121d521b316d.js": "/themuseum/precache-manifest.fa30ff34911ad4a96e69121d521b316d.js",
     "service-worker.js": "/themuseum/service-worker.js",
     "static/css/2.3d637859.chunk.css.map": "/themuseum/static/css/2.3d637859.chunk.css.map",
-    "static/css/main.64aa3c86.chunk.css.map": "/themuseum/static/css/main.64aa3c86.chunk.css.map",
-    "static/js/2.103e1d8d.chunk.js.LICENSE.txt": "/themuseum/static/js/2.103e1d8d.chunk.js.LICENSE.txt",
+    "static/css/main.0b6f27f2.chunk.css.map": "/themuseum/static/css/main.0b6f27f2.chunk.css.map",
+    "static/js/2.30fe8f3e.chunk.js.LICENSE.txt": "/themuseum/static/js/2.30fe8f3e.chunk.js.LICENSE.txt",
     "static/media/ben-garratt-HoupC-zHlLo-unsplash.jpg": "/themuseum/static/media/ben-garratt-HoupC-zHlLo-unsplash.d29c015c.jpg",
     "static/media/chloe-evans-erHBElNC1DU-unsplash.jpg": "/themuseum/static/media/chloe-evans-erHBElNC1DU-unsplash.261d8e11.jpg",
     "static/media/chris-barbalis-x31PAWGYbGE-unsplash.jpg": "/themuseum/static/media/chris-barbalis-x31PAWGYbGE-unsplash.6b1b03a5.jpg",
     "static/media/debby-hudson-bb8_zSReIF0-unsplash.jpg": "/themuseum/static/media/debby-hudson-bb8_zSReIF0-unsplash.1e5d5ad6.jpg",
     "static/media/denis-jung-nQcmPxXZ5zU-unsplash.jpg": "/themuseum/static/media/denis-jung-nQcmPxXZ5zU-unsplash.29dd4176.jpg",
+    "static/media/edward-howell-Jbf9nNe_qaE-unsplash.jpg": "/themuseum/static/media/edward-howell-Jbf9nNe_qaE-unsplash.10d1ec56.jpg",
     "static/media/edwin-ashitendoh-08fd3iw5pCM-unsplash.jpg": "/themuseum/static/media/edwin-ashitendoh-08fd3iw5pCM-unsplash.64ba9842.jpg",
     "static/media/ewien-van-bergeijk-kwant-GdYO8v2SISs-unsplash.jpg": "/themuseum/static/media/ewien-van-bergeijk-kwant-GdYO8v2SISs-unsplash.23e980a0.jpg",
     "static/media/gregory-rakovsky-WVFOgVVma6U-unsplash.jpg": "/themuseum/static/media/gregory-rakovsky-WVFOgVVma6U-unsplash.dc06b433.jpg",
@@ -32,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.de5bb5c6.js",
     "static/css/2.3d637859.chunk.css",
-    "static/js/2.103e1d8d.chunk.js",
-    "static/css/main.64aa3c86.chunk.css",
-    "static/js/main.8c0437f6.chunk.js"
+    "static/js/2.30fe8f3e.chunk.js",
+    "static/css/main.0b6f27f2.chunk.css",
+    "static/js/main.400c2455.chunk.js"
   ]
 }
