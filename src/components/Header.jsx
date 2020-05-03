@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Navbar, Container, Row, Col, Button } from 'react-bootstrap'
+import { Navbar, Nav, Row, Col, Button } from 'react-bootstrap'
 import Collapse from 'utils/Collapse'
 import Slide from 'utils/Slide'
 import SubMenu from 'components/HeaderSubMenu'
@@ -46,8 +46,8 @@ const menuData = [
   },
   {
     id: 2,
-    title: 'Exhibitions and events',
-    to: '/events'
+    title: 'Discobery',
+    to: '/discobery'
   },
   {
     id: 3,
@@ -116,9 +116,9 @@ export default function Header() {
 
   const createMenu = () => {
     return menuData.map((el, i) => (
-      <Col key={i} as="li" sm="6" lg="auto">
+      <Col key={i} sm="6" lg="auto">
         <Link
-          to={el.to ? el.to : '#'}
+          to={el.to ? el.to : ''}
           onClick={handleMenuClick(i)}
           className={`menu-link ${
             isSubMenuShow && subMenuIndex === i ? 'menu-link--active' : ''
@@ -160,29 +160,29 @@ export default function Header() {
           </div>
           <nav className={`l-header__navbar-collapse mb-lg-n5 bg-dark px-4 px-lg-0`}>
             <Collapse expand="lg" isShow={isMenuShow} className="mb-0">
-              <ul className="d-none d-lg-flex justify-content-lg-end">
-                <li>
+              <Nav className="d-none d-lg-flex justify-content-lg-end">
+                <Nav.Item>
                   <a href="#" className="text-secondary">
                     <i className="mr-2 fas fa-shopping-cart" />
                     <Button variant="link" className="text-secondary">
                       Shop
                     </Button>
                   </a>
-                </li>
-                <li>
+                </Nav.Item>
+                <Nav.Item>
                   <a href="#" className="text-secondary">
                     <i className="mr-2 fas fa-search" />
                     <Button variant="link" className="text-secondary">
                       Search
                     </Button>
                   </a>
-                </li>
-              </ul>
-              <Row as="ul" className="flex-lg-nowrap mt-lg-3 mb-0">
+                </Nav.Item>
+              </Nav>
+              <Row className="flex-lg-nowrap mt-lg-3 mb-0">
                 {createMenu()}
               </Row>
-              <Row as="ul" className="d-lg-none justify-content-lg-end mt-3">
-                <Col as="li" sm="6" lg="auto" className="pb-3 pb-lg-0">
+              <Row className="d-lg-none justify-content-lg-end mt-3">
+                <Col sm="6" lg="auto" className="pb-3 pb-lg-0">
                   <Button
                     variant="shadow"
                     block
@@ -192,7 +192,7 @@ export default function Header() {
                     <span className="ml-2">Shop</span>
                   </Button>
                 </Col>
-                <Col as="li" sm="6" lg="auto">
+                <Col sm="6" lg="auto">
                   <Button
                     variant="shadow"
                     block

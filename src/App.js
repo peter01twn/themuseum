@@ -4,25 +4,32 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Header from './components/Header'
+import Footer from './components/Footer'
 import Index from './pages/index/Index'
 import Visit from './pages/visit/Visit'
-import Events from './pages/events/Events'
+import Discovery from './pages/discovery/Discovery'
+import ScrollTop from 'utils/ScrollTop'
 
 function App() {
   return (
     <Router>
       <div className="App overflow-hidden">
-        <Switch>
-          <Route path="/visit">
-            <Visit />
-          </Route>
-          <Route path="/events">
-            <Events />
-          </Route>
-          <Route path="/">
-            <Index />
-          </Route>
-        </Switch>
+        <Header />
+        <ScrollTop>
+          <Switch>
+            <Route path="/visit">
+              <Visit />
+            </Route>
+            <Route path="/discobery">
+              <Discovery />
+            </Route>
+            <Route path="/">
+              <Index />
+            </Route>
+          </Switch>
+        </ScrollTop>
+        <Footer />
       </div>
     </Router>
   );

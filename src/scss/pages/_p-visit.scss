@@ -1,2 +1,14 @@
 .p-visit {
+  &__list-lg {
+    .nav-item {
+      padding-left: $nav-item-padding-x;
+      padding-right: $nav-item-padding-x;
+    }
+  }
+
+  &__card {
+    .card-img {
+      height: 190px;
+    }
+  }
 }

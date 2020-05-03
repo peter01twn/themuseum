@@ -6,7 +6,7 @@ const HeaderSubMenu = ({ data = [], onClick, isShow }) => {
   const createMenu = () => {
     return data.map((el, i) => {
       return (
-        <Col key={i} as="li" lg="4">
+        <Col key={i} lg="4">
           <Link
             to={el.to ? el.to : '#' }
             onClick={onClick}
@@ -22,8 +22,8 @@ const HeaderSubMenu = ({ data = [], onClick, isShow }) => {
   }
 
   return (
-    <Row as="ul">
-      <Col as="li" lg="4" className="l-header__toggle">
+    <Row >
+      <Col lg="4" className="l-header__toggle">
         <button
           onClick={onClick}
           className="menu-link menu-link--light w-100 d-flex align-items-center px-0 py-3 py-lg-4 fs-md"

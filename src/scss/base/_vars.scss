@@ -42,6 +42,11 @@ $h4-font-size: $font-size-base * 1.5;
 $h5-font-size: $font-size-base * 1.25;
 $h6-font-size: $font-size-base;
 
+$display1-size: 6rem;
+$display2-size: 5.5rem;
+$display3-size: 4.5rem;
+$display4-size: 3.5rem;
+
 $font-sizes: (
   'sm': $font-size-sm,
   'md': $h6-font-size,
@@ -50,11 +55,17 @@ $font-sizes: (
   'xxl': $h3-font-size,
 );
 
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600;
+$font-weight-bolder: bolder !default;
+
 // spacer
 $spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer * 0.25,
+  1: $spacer * 0.5,
   2: $spacer * 0.75,
   3: $spacer,
   4: $spacer * 1.5,
@@ -69,6 +80,7 @@ $body-bg: $dark;
 $body-color: $white;
 
 $component-active-bg: $primary;
+$border-width: 1px !default;
 
 $link-color: $primary;
 $link-hover-color: currentColor;
@@ -95,17 +107,60 @@ $container-max-widths: (
 
 $grid-gutter-width: $spacer * 3;
 
+$hr-border-color: $secondary;
+
 $navbar-padding-x: $spacer * 3 / 2;
 
+$input-btn-padding-y: 0.375rem !default;
+$input-btn-padding-x: 0.75rem !default;
+$input-btn-focus-box-shadow: none;
+$input-btn-border-width: $border-width !default;
+$input-btn-font-size: $font-size-base !default;
+
+// $input-btn-padding-y-sm:      .25rem !default;
+// $input-btn-padding-x-sm:      .5rem !default;
+// $input-btn-font-size-sm:      $font-size-sm !default;
+// $input-btn-line-height-sm:    $line-height-sm !default;
+
+$input-btn-padding-y-lg: 0.5rem !default;
+$input-btn-padding-x-lg: 1rem !default;
+$input-btn-font-size-lg: $font-size-lg !default;
+// $input-btn-line-height-lg:    $line-height-lg !default;
+
+$input-padding-y: $input-btn-padding-y !default;
+$input-padding-x: $input-btn-padding-x !default;
 $input-bg: $body-bg;
 $input-color: $white;
 $input-border-color: $primary;
+$input-border-width: $input-btn-border-width !default;
 $input-border-radius: 0;
 $input-border-radius-lg: 0;
 $input-border-radius-sm: 0;
 $input-placeholder-color: $primary;
+$input-font-size: $input-btn-font-size !default;
 
-$input-btn-focus-box-shadow: none;
+// $input-padding-y-sm: $input-btn-padding-y-sm !default;
+// $input-padding-x-sm: $input-btn-padding-x-sm !default;
+// $input-font-size-sm: $input-btn-font-size-sm !default;
+// $input-line-height-sm: $input-btn-line-height-sm !default;
+
+$input-padding-y-lg: $input-btn-padding-y-lg !default;
+$input-padding-x-lg: $input-btn-padding-x-lg !default;
+$input-font-size-lg: $input-btn-font-size-lg !default;
+// $input-line-height-lg: $input-btn-line-height-lg !default;
+
+$select-padding-y: $input-padding-y;
+$select-padding-x: $input-padding-x;
+$select-bg: $input-bg;
+$select-color: $input-color;
+$select-border-width: $input-border-width;
+$select-border-color: $input-border-color;
+$select-border-redius: $input-border-radius;
+$select-font-size: $input-font-size;
+
+$select-padding-y-lg: $input-padding-y-lg;
+$select-padding-x-lg: $input-padding-x-lg;
+$select-font-size-lg: $input-font-size-lg;
 
 $btn-font-size: inherit;
 $btn-font-weight: inherit;

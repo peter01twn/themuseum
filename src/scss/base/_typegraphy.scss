@@ -10,7 +10,8 @@ ul {
   margin-left: -$spacer / 2;;
   margin-right: -$spacer / 2;;
   padding-left: 0;
-  list-style: none;
+  // list-style: none;
+  list-style-position: inside;
 
   li {
     padding-left: $spacer / 2;

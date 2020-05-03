@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import Header from 'components/Header'
-import Footer from 'components/Footer'
 import Banner from 'components/Banner'
 import Hero from 'components/Hero'
 import Collapse from 'utils/Collapse'
@@ -10,9 +8,9 @@ import FbIcon from 'components/FbIcon'
 import TwitterIcon from 'components/TwitterIcon'
 import DownloadIcon from 'components/DownloadIcon'
 import Section from 'components/Section'
-import CardList from 'pages/index/CardList'
-import heroBg from 'images/hero-bg2.jpg'
-import { Alert, Breadcrumb, Nav } from 'react-bootstrap'
+import CardList from './CardList'
+import heroBg from 'images/edward-howell-Jbf9nNe_qaE-unsplash.jpg'
+import { Alert, Breadcrumb, Nav, Row, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import bannerbg from 'images/li-lin-VngNE4WQp24-unsplash.jpg'
 
@@ -20,14 +18,13 @@ const Visit = () => {
   const [contentShow, setContentShow] = useState(false)
   return (
     <>
-      <Header />
       <Hero>
         <Hero.Fixed>
           <img className="object-cover mt-6 mt-lg-n5" src={heroBg}></img>
         </Hero.Fixed>
         <Hero.ShowWindow className="d-flex align-items-end">
           <div className="l-section">
-            <h2 className="l-section__title">Visit the Museum</h2>
+            <h2 className="display-4">Visit here</h2>
           </div>
         </Hero.ShowWindow>
         <Hero.Scroll className="theme-light">
@@ -44,20 +41,19 @@ const Visit = () => {
                 Data
               </Breadcrumb.Item>
             </Breadcrumb>
-            <ul className="d-flex align-items-center mb-0">
-              <li>
+            <Nav className="d-flex align-items-center mb-0">
+              <Nav.Item>
                 <h6>Share the page</h6>
-              </li>
-              <li>
+              </Nav.Item>
+              <Nav.Item>
                 <FbIcon />
-              </li>
-              <li>
+              </Nav.Item>
+              <Nav.Item>
                 <TwitterIcon />
-              </li>
-            </ul>
+              </Nav.Item>
+            </Nav>
           </Section>
-
-          <div className="l-section">
+          <Section className="border-bottom-0 pb-0">
             <Alert variant="secondary">
               <Toggler
                 className="d-md-none"
@@ -67,7 +63,7 @@ const Visit = () => {
                 Contents
               </Toggler>
               <Collapse isShow={contentShow} expand="md">
-                <Nav className="nav-max-sm--vertical pt-3 pt-md-0">
+                <Nav className="p-visit__list-lg nav-max-sm--vertical pt-3 pt-md-0">
                   <Nav.Item>
                     <Nav.Link className="s-link">Full opening hours</Nav.Link>
                   </Nav.Item>
@@ -86,8 +82,75 @@ const Visit = () => {
                 </Nav>
               </Collapse>
             </Alert>
-          </div>
-          <Section>Articla</Section>
+          </Section>
+          <Section>
+            <Row className="flex-column-reverse flex-lg-row">
+              <Col lg="8">
+                <Section.Title>
+                  The COVID - 19 place is open now.
+                  <p className="h6 mt-2">China of Virus in Disease</p>
+                </Section.Title>
+                _______________________________
+                <br />
+                <br />
+                <p>
+                  Immerse yourself in two million years of human history, art
+                  and culture.
+                </p>
+                <p>Plan your visit:</p>
+                <ul>
+                  <li>
+                    Admission is free and advance booking is only required for
+                    groups of 10 or more.
+                  </li>
+                  <li>We charge for some exhibitions, events and tours.</li>
+                  <li>
+                    Exhibitions are free for Members and concessions are
+                    available.
+                  </li>
+                  <li>
+                    Please note that we begin clearing galleries 10 minutes
+                    before they close.
+                  </li>
+                  <li>
+                    From mid-March 2020 scaffolding will be erected at the front
+                    of the Museum (Great Russell Street entrance), to facilitate
+                    conservation work on our iconic colonnade. Find out more
+                    about the 'Conservation work on the Colonnade' below
+                  </li>
+                </ul>
+                <p>
+                  Please note that items of large luggage (including some bags
+                  and rucksacks, and all wheeled suitcases) are not permitted.
+                  See Entering the Museum below for more details.{' '}
+                </p>
+              </Col>
+              <Col lg="4 pb-5">
+                <Section.Title>Free entry</Section.Title>
+                <hr />
+                <div className="h6">
+                  <i className="far fa-clock mr-1" />
+                  The Museum always open.
+                </div>
+                <hr />
+                <div className="h6 mb-3">
+                  <i className="fas fa-map-marker-alt mr-1" />
+                  The British Museum
+                </div>
+                <span>Street and alley</span>
+                <p>road and every fork</p>
+                <hr />
+                <Button
+                  variant="dark"
+                  block
+                  className="d-flex justify-content-between align-items-center"
+                >
+                  View more information
+                  <i className="fas fa-chevron-circle-right" />
+                </Button>
+              </Col>
+            </Row>
+          </Section>
           <Section>
             <Section.Title>What to see</Section.Title>
             <CardList />
@@ -161,7 +224,6 @@ const Visit = () => {
           style={{ height: '300px' }}
         />
       </Hero>
-      <Footer />
     </>
   )
 }

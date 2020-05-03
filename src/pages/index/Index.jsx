@@ -11,7 +11,6 @@ import heroBg from 'images/hero-bg2.jpg'
 const Index = () => {
   return (
     <>
-      <Header />
       <Hero>
         <Hero.Fixed>
           <img className="object-cover mt-6 mt-lg-n5" src={heroBg}></img>
@@ -20,7 +19,7 @@ const Index = () => {
           <div className="l-section">
             <h2 className="l-section__title">
               Welcome to the <span className="h1 text-danger">COVID-19</span>{' '}
-              Museum
+              home
             </h2>
           </div>
         </Hero.ShowWindow>
@@ -29,7 +28,7 @@ const Index = () => {
             <div className="l-section border-bottom border-bright">
               <div className="d-md-flex justify-content-between">
                 <h2 className="mb-4 mb-md-0">
-                  Discover two million years of human history and culture.
+                  Discover COVID-19 information and current situation.
                 </h2>
                 <div className="h4 pl-md-6 text-nowrap">
                   <p>
@@ -58,7 +57,6 @@ const Index = () => {
           </div>
         </Hero.Scroll>
       </Hero>
-      <Footer />
     </>
   )
 }

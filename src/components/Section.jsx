@@ -11,8 +11,9 @@ const Section = ({ className, children, ...attrs }) => {
   )
 }
 
-Section.Title = ({ className, children, ...attrs }) => {
-  return <h2 className={`l-section__title ${className}`}>{children}</h2>
+Section.Title = ({ as, className, children, ...attrs }) => {
+  const Component = as ? as : 'h2'
+  return <Component className={`l-section__title ${className}`}>{children}</Component>
 }
 
 export default Section

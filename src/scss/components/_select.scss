@@ -1,0 +1,81 @@
+.select {
+  position: relative;
+  display: inline-block;
+  border: $select-border-width solid $select-border-color;
+  color: $select-color;
+  background-color: $select-bg;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+
+  &__content {
+    @include select-content;
+
+    position: relative;
+  }
+
+  &__icon {
+    @include select-icon;
+  }
+
+  &__list {
+    display: block;
+    margin: 0;
+  }
+
+  &__list-item {
+    @include select-list-item;
+
+    position: relative;
+    display: block;
+    background-color: transparent;
+    color: $dark;
+    cursor: pointer;
+
+    &--active, &:hover {
+      color: $black;
+      background-color: darken(color-yiq($select-bg), 20%);
+      background-clip: border-box;
+    }
+  }
+
+  &--active,
+  &:hover {
+    color: color-yiq($select-color);
+    background-color: color-yiq($select-bg);
+
+    .select__icon {
+      border-color: $dark;
+    }
+  }
+
+  &--active {
+    .select__icon {
+      @include select-icon-active;
+    }
+  }
+}
+
+.select--lg {
+  .select__content {
+    @include select-content(
+      $select-padding-x-lg,
+      $select-padding-y-lg,
+      $select-font-size-lg
+    );
+  }
+  .select__list-item {
+    @include select-list-item(
+      $select-padding-x-lg,
+      $select-padding-y-lg,
+      $select-font-size-lg
+    );
+  }
+  .select__icon {
+    @include select-icon(
+      $select-padding-x-lg,
+      $select-color,
+      $select-font-size-lg
+    );
+  }
+}

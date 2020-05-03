@@ -17,28 +17,28 @@ export default function Footer() {
         <Row as="section" className="pb-4 border-bottom border-light">
           <Col md="6">
             <h3 className="l-section__title mb-3">Connect with us</h3>
-            <ul className="d-flex">
-              <li>
+            <Nav className="d-flex">
+              <Nav.Item>
                 <Icon>
                   <i className="fab fa-facebook-f" />
                 </Icon>
-              </li>
-              <li>
+              </Nav.Item>
+              <Nav.Item>
                 <Icon>
                   <i className="fab fa-twitter" />
                 </Icon>
-              </li>
-              <li>
+              </Nav.Item>
+              <Nav.Item>
                 <Icon>
                   <i className="fab fa-youtube"></i>
                 </Icon>
-              </li>
-              <li>
+              </Nav.Item>
+              <Nav.Item>
                 <Icon>
                   <i className="fab fa-instagram"></i>
                 </Icon>
-              </li>
-            </ul>
+              </Nav.Item>
+            </Nav>
           </Col>
           <Col md="6">
             <Form.Group controlId="userEmail">
