@@ -40,7 +40,7 @@ const Collapse = ({
       const newClass = addClass(['collapse--collapsing'])(className)
       container.className = newClass
       // reflow
-      const h = container.scrollHeight + 'px'
+      let h = container.scrollHeight + 'px'
       container.style.height = ''
     }
   }, [isShow])

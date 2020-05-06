@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="l-footer bg-shadow">
       <div className="l-section">
         <Row as="section" className="pb-4 border-bottom border-light">
-          <Col md="6">
+          <Col md="6" className="mb-3 mb-md-0">
             <h3 className="l-section__title mb-3">Connect with us</h3>
             <Nav className="d-flex">
               <Nav.Item>
@@ -61,7 +61,7 @@ export default function Footer() {
             </Form.Group>
           </Col>
         </Row>
-        <Row className="pt-5">
+        <Row className="pt-5 text-wrap">
           <Col lg="3">
             <Row>
               <Col sm="6" lg="12" className="mb-5">

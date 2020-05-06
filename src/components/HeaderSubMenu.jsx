@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Button } from 'react-bootstrap'
 
-const HeaderSubMenu = ({ data = [], onClick, isShow }) => {
+const HeaderSubMenu = ({ data = [], onClick, back, isShow }) => {
   const createMenu = () => {
     return data.map((el, i) => {
       return (
@@ -25,7 +25,7 @@ const HeaderSubMenu = ({ data = [], onClick, isShow }) => {
     <Row >
       <Col lg="4" className="l-header__toggle">
         <button
-          onClick={onClick}
+          onClick={back}
           className="menu-link menu-link--light w-100 d-flex align-items-center px-0 py-3 py-lg-4 fs-md"
           style={{opacity: '.75'}}
         >

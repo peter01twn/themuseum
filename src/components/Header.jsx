@@ -97,20 +97,26 @@ export default function Header() {
   }
 
   const handleMenuClick = (index) =>
-  () => {
-    if (isSubMenuShow && subMenuIndex === index) {
-      setSubMenuShow(false)
-      return
+    () => {
+      if (isSubMenuShow && subMenuIndex === index) {
+        setSubMenuShow(false)
+        return
+      }
+      if (menuData[index].subMenu) {
+        setSubMenuShow(true)
+      } else {
+        setSubMenuShow(false)
+        setMenuShow(false)
+      }
+      setSubMenuIndex(index)
     }
-    if (menuData[index].subMenu) {
-      setSubMenuShow(true)
-    } else {
-      setSubMenuShow(false)
-    }
-    setSubMenuIndex(index)
-  }
 
   const handleSubMenuClick = () => {
+    setSubMenuShow(false)
+    setMenuShow(false)
+  }
+  
+  const handleSubMenuBack = () => {
     setSubMenuShow(false)
   }
 
@@ -158,7 +164,7 @@ export default function Header() {
               Menu
             </Button>
           </div>
-          <nav className={`l-header__navbar-collapse mb-lg-n5 bg-dark px-4 px-lg-0`}>
+          <nav className={`l-header__navbar-collapse mb-lg-n5 bg-dark px-4 px-lg-0 pb-3 pb-md-0`}>
             <Collapse expand="lg" isShow={isMenuShow} className="mb-0">
               <Nav className="d-none d-lg-flex justify-content-lg-end">
                 <Nav.Item>
@@ -219,6 +225,7 @@ export default function Header() {
                 isShow={isSubMenuShow}
                 data={menuData[subMenuIndex]?.subMenu}
                 onClick={handleSubMenuClick}
+                back={handleSubMenuBack}
               />
             </div>
           </Slide>
