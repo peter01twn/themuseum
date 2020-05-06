@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/themuseum/static/css/main.0b6f27f2.chunk.css",
-    "main.js": "/themuseum/static/js/main.400c2455.chunk.js",
-    "main.js.map": "/themuseum/static/js/main.400c2455.chunk.js.map",
+    "main.css": "/themuseum/static/css/main.7c2de76c.chunk.css",
+    "main.js": "/themuseum/static/js/main.effd87be.chunk.js",
+    "main.js.map": "/themuseum/static/js/main.effd87be.chunk.js.map",
     "runtime-main.js": "/themuseum/static/js/runtime-main.de5bb5c6.js",
     "runtime-main.js.map": "/themuseum/static/js/runtime-main.de5bb5c6.js.map",
     "static/css/2.3d637859.chunk.css": "/themuseum/static/css/2.3d637859.chunk.css",
     "static/js/2.30fe8f3e.chunk.js": "/themuseum/static/js/2.30fe8f3e.chunk.js",
     "static/js/2.30fe8f3e.chunk.js.map": "/themuseum/static/js/2.30fe8f3e.chunk.js.map",
     "index.html": "/themuseum/index.html",
-    "precache-manifest.fa30ff34911ad4a96e69121d521b316d.js": "/themuseum/precache-manifest.fa30ff34911ad4a96e69121d521b316d.js",
+    "precache-manifest.8f8896d286ae296135b5e3c6bb165284.js": "/themuseum/precache-manifest.8f8896d286ae296135b5e3c6bb165284.js",
     "service-worker.js": "/themuseum/service-worker.js",
     "static/css/2.3d637859.chunk.css.map": "/themuseum/static/css/2.3d637859.chunk.css.map",
-    "static/css/main.0b6f27f2.chunk.css.map": "/themuseum/static/css/main.0b6f27f2.chunk.css.map",
+    "static/css/main.7c2de76c.chunk.css.map": "/themuseum/static/css/main.7c2de76c.chunk.css.map",
     "static/js/2.30fe8f3e.chunk.js.LICENSE.txt": "/themuseum/static/js/2.30fe8f3e.chunk.js.LICENSE.txt",
     "static/media/ben-garratt-HoupC-zHlLo-unsplash.jpg": "/themuseum/static/media/ben-garratt-HoupC-zHlLo-unsplash.d29c015c.jpg",
     "static/media/chloe-evans-erHBElNC1DU-unsplash.jpg": "/themuseum/static/media/chloe-evans-erHBElNC1DU-unsplash.261d8e11.jpg",
@@ -34,7 +34,7 @@
     "static/js/runtime-main.de5bb5c6.js",
     "static/css/2.3d637859.chunk.css",
     "static/js/2.30fe8f3e.chunk.js",
-    "static/css/main.0b6f27f2.chunk.css",
-    "static/js/main.400c2455.chunk.js"
+    "static/css/main.7c2de76c.chunk.css",
+    "static/js/main.effd87be.chunk.js"
   ]
 }

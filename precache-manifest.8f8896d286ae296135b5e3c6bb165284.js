@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ab806c5bd1bb768a23bbf1890ce67f8",
+    "revision": "720e55566ff06c84d13e2ef02bbfe2d5",
     "url": "/themuseum/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/themuseum/static/css/2.3d637859.chunk.css"
   },
   {
-    "revision": "db51eec395b06ecb5070",
-    "url": "/themuseum/static/css/main.0b6f27f2.chunk.css"
+    "revision": "ed96199dfd058d0bec2b",
+    "url": "/themuseum/static/css/main.7c2de76c.chunk.css"
   },
   {
     "revision": "3e2f90e32d26f05a6a40",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/themuseum/static/js/2.30fe8f3e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "db51eec395b06ecb5070",
-    "url": "/themuseum/static/js/main.400c2455.chunk.js"
+    "revision": "ed96199dfd058d0bec2b",
+    "url": "/themuseum/static/js/main.effd87be.chunk.js"
   },
   {
     "revision": "ff7fd12f60a7d3c2940c",
