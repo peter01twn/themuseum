@@ -28,8 +28,8 @@ const Visit = () => {
           </div>
         </Hero.ShowWindow>
         <Hero.Scroll className="theme-light">
-          <Section className="breadcrumb--dark d-flex justify-content-between py-3 bg-light">
-            <Breadcrumb>
+          <Section className="d-sm-flex justify-content-between py-3 bg-light">
+            <Breadcrumb className="breadcrumb--dark border-bottom">
               <Breadcrumb.Item linkAs={Link} linkProps={{ to: '/' }}>
                 Home
               </Breadcrumb.Item>

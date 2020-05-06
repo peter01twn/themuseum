@@ -43,11 +43,11 @@ const Select = ({
         {selected.text ? selected.text : placeholder}
         <div className="select__icon" />
       </div>
-      <div className="select__list">
-        <Collapse isShow={show}>
+      {/* <div className="select__list"> */}
+        <Collapse isShow={show} className="select__list">
           <Provider value={{ onClick: itemClick }}>{children}</Provider>
         </Collapse>
-      </div>
+      {/* </div> */}
     </div>
   )
 }

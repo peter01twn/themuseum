@@ -97,20 +97,26 @@ export default function Header() {
   }
 
   const handleMenuClick = (index) =>
-  () => {
-    if (isSubMenuShow && subMenuIndex === index) {
-      setSubMenuShow(false)
-      return
+    () => {
+      if (isSubMenuShow && subMenuIndex === index) {
+        setSubMenuShow(false)
+        return
+      }
+      if (menuData[index].subMenu) {
+        setSubMenuShow(true)
+      } else {
+        setSubMenuShow(false)
+        setMenuShow(false)
+      }
+      setSubMenuIndex(index)
     }
-    if (menuData[index].subMenu) {
-      setSubMenuShow(true)
-    } else {
-      setSubMenuShow(false)
-    }
-    setSubMenuIndex(index)
-  }
 
   const handleSubMenuClick = () => {
+    setSubMenuShow(false)
+    setMenuShow(false)
+  }
+  
+  const handleSubMenuBack = () => {
     setSubMenuShow(false)
   }
 
@@ -219,6 +225,7 @@ export default function Header() {
                 isShow={isSubMenuShow}
                 data={menuData[subMenuIndex]?.subMenu}
                 onClick={handleSubMenuClick}
+                back={handleSubMenuBack}
               />
             </div>
           </Slide>

@@ -1,6 +1,5 @@
 .select {
   position: relative;
-  z-index: $zindex-dropdown;
   display: inline-block;
   color: $select-color;
   background-color: $select-bg;
@@ -16,6 +15,9 @@
 
   &__icon {
     @include select-icon;
+    transform: rotate(135deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.2s ease;
   }
 
   &__list {
@@ -24,18 +26,20 @@
     left: 0;
     right: 0;
     margin: 0;
+    z-index: $zindex-dropdown;
+    background-color: color-yiq($select-bg);
   }
 
   &__list-item {
     @include select-list-item;
 
-    position: relative;
     display: block;
     background-color: transparent;
     color: $dark;
     cursor: pointer;
 
-    &--active, &:hover {
+    &--active,
+    &:hover {
       color: $black;
       background-color: darken(color-yiq($select-bg), 20%);
       background-clip: border-box;
@@ -55,9 +59,6 @@
   &--active {
     .select__icon {
       @include select-icon-active;
-    }
-    .select__list {
-      background-color: color-yiq($select-bg);
     }
   }
 }
