@@ -46,8 +46,8 @@ const menuData = [
   },
   {
     id: 2,
-    title: 'Discobery',
-    to: '/discobery'
+    title: 'Discovery',
+    to: '/discovery'
   },
   {
     id: 3,
@@ -148,7 +148,7 @@ export default function Header() {
       >
         <div className="l-section d-flex justify-content-between p-0">
           <Navbar.Brand as={Link} to="/" className="text-decoration-none vertical-middle">
-            <span className="h3">COVID - 19</span>
+            <span className="h3">Discovery</span>
           </Navbar.Brand>
           <div className="l-header__toggle position-relative vertical-middle">
             {!isMenuShow ? (
