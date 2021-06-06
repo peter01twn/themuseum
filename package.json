@@ -2,7 +2,7 @@
   "name": "the-museum",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://peter01twn.github.io/themuseum/",
+  "homepage": "https://themuseum.yuiixx.com",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
